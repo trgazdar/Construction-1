@@ -1,0 +1,219 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* late_check_in_early_check_out
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-04 11:37+0000\n"
+"PO-Revision-Date: 2022-01-04 11:37+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model,name:late_check_in_early_check_out.model_hr_attendance
+#: model_terms:ir.ui.view,arch_db:late_check_in_early_check_out.id_hr_payslip_inheri_form
+msgid "Attendance"
+msgstr "الحضور"
+
+#. module: late_check_in_early_check_out
+#: model_terms:ir.ui.view,arch_db:late_check_in_early_check_out.id_hr_payslip_inheri_form
+msgid "AttendanceShifts "
+msgstr "مواعيد الحضور"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__display_name
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__display_name
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_contract__display_name
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__early_leave
+msgid "Early Leave"
+msgstr "المغادرة باكرا"
+
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__early_sign_in
+msgid "Early Sign In"
+msgstr "تسجيل الدخول المبكر"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model,name:late_check_in_early_check_out.model_hr_employee
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model,name:late_check_in_early_check_out.model_hr_contract
+msgid "Employee Contract"
+msgstr "عقد الموظف"
+
+#. module: late_check_in_early_check_out
+#: model_terms:ir.ui.view,arch_db:late_check_in_early_check_out.id_hr_employee_inherit_form
+msgid "Employee Shifts"
+msgstr "مواعيد عمل الموظفين"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__hour_from
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__hour_from
+msgid "Hour From"
+msgstr "من الساعة"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__hour_to
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__hour_to
+msgid "Hour To"
+msgstr "الي الساعة"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__hr_attend
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__hr_attend_ids
+msgid "Hr Attend"
+msgstr "حضور الموارد البشرية"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__id
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__id
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_contract__id
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_employee__id
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line____last_update
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance____last_update
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_contract____last_update
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__write_uid
+msgid "Last Updated by"
+msgstr "اخر تعديل بواسطة"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__write_date
+msgid "Last Updated on"
+msgstr "اخر تحديث في"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__late
+msgid "Late"
+msgstr "تاخير"
+
+#. module: late_check_in_early_check_out
+#: model:ir.actions.server,name:late_check_in_early_check_out.id_ir_cron_check_challenge_ir_actions_server
+#: model:ir.cron,cron_name:late_check_in_early_check_out.id_ir_cron_check_challenge
+#: model:ir.cron,name:late_check_in_early_check_out.id_ir_cron_check_challenge
+msgid "Meshmesh"
+msgstr ""
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__name
+msgid "Name"
+msgstr "الاسم"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__number_of_days_to_attend
+msgid "Number of days to attend"
+msgstr "عدد ايام الحضور"
+
+#. module: late_check_in_early_check_out
+#: model_terms:ir.ui.view,arch_db:late_check_in_early_check_out.id_hr_payslip_inheri_form
+msgid "OverTime"
+msgstr "اضافي"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__over_time
+msgid "Overtime"
+msgstr "اضافي"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__overtime_payroll_ids
+msgid "Overtime Payroll"
+msgstr "راتب الوقت الاضافي"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model,name:late_check_in_early_check_out.model_hr_payslip
+msgid "Pay Slip"
+msgstr "إيصال المرتب"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__penalties_1
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_contract__penalties_1
+msgid "Penalties 1"
+msgstr "العقوبات 1"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__penalties_2
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_contract__penalties_2
+msgid "Penalties 2"
+msgstr "العقوبات 2"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__shift_name_id
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_employee__shift_name_ids
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__shift_name_ids
+msgid "Shift Name"
+msgstr "اسم نوبة العمل"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_employee_shift_line__shift_payroll_id
+msgid "Shift Payroll"
+msgstr "راتب نوبة العمل"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__sum_penalties
+msgid "Sum Penalties"
+msgstr "حساب العقوبات"
+
+#. module: late_check_in_early_check_out
+#: model_terms:ir.ui.view,arch_db:late_check_in_early_check_out.id_hr_payslip_inheri_form
+msgid "Total"
+msgstr "الاجماعي"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__total_penalties_1
+msgid "Total Penalties1"
+msgstr "اجمالي العقوبات1"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_payslip__total_penalties_2
+msgid "Total Penalties2"
+msgstr "اجمالي العقوبات 2"
+
+#. module: late_check_in_early_check_out
+#: model_terms:ir.ui.view,arch_db:late_check_in_early_check_out.id_hr_payslip_inheri_form
+msgid "Work Hours"
+msgstr "ساعات العمل"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model.fields,field_description:late_check_in_early_check_out.field_hr_attendance__worked_hours
+msgid "Worked Hours"
+msgstr "ساعات العمل"
+
+#. module: late_check_in_early_check_out
+#: model:ir.model,name:late_check_in_early_check_out.model_employee_shift_line
+msgid "employee.shift.line"
+msgstr ""

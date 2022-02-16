@@ -1,0 +1,2361 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* wc_construction
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-10 21:23+0000\n"
+"PO-Revision-Date: 2022-01-10 21:23+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__completed_percentage_view
+msgid "% Completed View"
+msgstr "عرض مكتمل"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "&amp;nbsp;<span>on</span>&amp;nbsp;"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.report,print_report_name:wc_construction.owner_contract_invoice_report
+msgid "'Contract - %s' % (object.name).replace('/', '')"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.report,print_report_name:wc_construction.action_report_saleorder_with_no_tax
+msgid ""
+"(object.state in ('draft', 'sent') and 'Quotation - %s' % (object.name)) or "
+"'Order - %s' % (object.name)"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid ""
+"<span style=\"font-weight: bold;padding-left:15px;padding-"
+"right:15px;\">Amount</span>"
+msgstr "المبلغ"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<span>Disc.%</span>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<span>Pro-Forma Invoice # </span>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong class=\"mr16\">Subtotal</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                        الحـسـومـات الاخـرى\n"
+"                                    </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    (تـفـصـيـل الحـسـومـات الاخـرى فى الصـفـحـة الاخيــرة)\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    إجمالى المبلغ المستحق صرفه لهذه الفتره للمقاول :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    إلى تاريخ :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    اسـم العـمـلـيـة :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    الموافق :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    تـاريـخـه :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    حـسـم دفـعـة مـقـدمـة :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    حـسـومـات اخرى :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    مدة العـقـد بعد التعديل :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    مـدة العـقـد :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>\n"
+"                                    من تاريخ :\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Expiration:</strong>"
+msgstr "الانتهاء"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Fiscal Position Remark:</strong>"
+msgstr "توقيع الحسابات"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Order Date:</strong>"
+msgstr "تاريخ الطلب"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Quotation Date:</strong>"
+msgstr "تاريخ عرض الطلب"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Salesperson:</strong>"
+msgstr "موظف المبيعات"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Shipping Address:</strong>"
+msgstr "عنوان الشحن"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Signature</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Subtotal</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Total</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "<strong>Your Reference:</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>إجـمـالـى</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>إجمالى المبلغ المستحق صرفه للمقاول شامل الضريبة :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>إجمـالـى الحـسـومـات :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>اسم المقاول\n"
+"                                    <br/>\n"
+"                                    شركة الجنوبي للمقاولات شركة شخص واحد\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>المبلغ المتبقى :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>تارـخ الاستلام الابتدائى :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>تارـخ المسـتـخلـص :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>تارـخ تسليم الموقع :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>حـسـم عـطـاء مـقاول :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>حـسـم غرامـة تاخـيـر :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>رئيس بلدية طريف</strong>\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>رقـم العـقـد :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>رقـم المـشـروع :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>ضريبة صرفت بالخطأ في مستخلصات سابقة :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>ضريبة مستحقة على مستخلصات سابقة :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>فترة المسـتـخـلـص :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>فقط :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>قـيـمـة العـقـد :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>قـيـمـة العـقـد بعد التعديل :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>قيمة الاعمال المنفذة فى هذه الفترة :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>ما سـبـق صرفـه :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>مجموع الضريبة المستحقة على المستخلص :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>مدير إدارة المشاريع</strong>\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>مراقب المشاريع</strong>\n"
+"                                            <br/>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>مـسـمـى العـقـد :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>مندوب المقاول</strong>\n"
+"                                <br/>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>نسبة الاعمال المنجزة حتى تاريخه :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "<strong>نسبة المدة المنقضية لكامل المدة :</strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"<strong>وزارة الشئون البلدية والقروية\n"
+"                                    <br/>\n"
+"                                    بلدية محافظة طريف\n"
+"                                </strong>"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__access_warning
+msgid "Access warning"
+msgstr "تحذير الوصول"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct__account_id
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__account_id
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__account_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__account_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__account_id
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat__account_id
+msgid "Account"
+msgstr "الحساب"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_needaction
+msgid "Action Needed"
+msgstr "تحتاج لعمل"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_ids
+msgid "Activities"
+msgstr "انشطة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr "زخرفة استثناء النشاط"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_state
+msgid "Activity State"
+msgstr "حالة النشاط"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_type_icon
+msgid "Activity Type Icon"
+msgstr "نوع النشاط"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__contract_condition__at_hack
+msgid "Ad-Hock"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__addition_ids
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__addition_ids
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__addition_ids
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__deduction_accounts_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__addition_ids
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__deduction_accounts_id
+#: model:ir.model.fields.selection,name:wc_construction.selection__deduction_accounts__deduction_type__addition
+#: model:ir.ui.menu,name:wc_construction.menu_addition_accounts_view
+msgid "Addition"
+msgstr "اضافي"
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_addition_accounts_view
+msgid "Addition Accounts"
+msgstr "حسابات اضافيه"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__addition_journal_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__addition_journal_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__addition_journal_id
+msgid "Addition Journal"
+msgstr "قيد اضافي"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Additions"
+msgstr "اضافات"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "Additions & Deductions"
+msgstr "الاضافات والخصومات"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__constrained_by__type__advanced_payment
+msgid "Advanced Payment"
+msgstr "دفع مسبق"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Amount"
+msgstr "المبلغ"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__amount_words
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__amount_words
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__amount_words
+msgid "Amount in Words:"
+msgstr "المبلغ بالكلمات"
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "البند التحليلي"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__contract_language__arabic
+msgid "Arabic"
+msgstr "عربي"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__attachment_id
+msgid "Attachment"
+msgstr "مرفقات"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_attachment_count
+msgid "Attachment Count"
+msgstr "عدد المرفقات"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__bid_bond_amount
+msgid "Bid Bond Amount"
+msgstr "مبلغ ضمان العطاء"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__contract_language__bilingual
+msgid "Bilingual"
+msgstr "ثنائي اللغة"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Bills"
+msgstr "الفواتير"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.project_report_form
+msgid "Cancel"
+msgstr "الغاء"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "Cancel Entry"
+msgstr "الغاء القيد"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__subcontractor_type__civil
+msgid "Civil"
+msgstr "مدني"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__code
+#: model:ir.model.fields,field_description:wc_construction.field_sale_order_line__code
+msgid "Code"
+msgstr "شفرة"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_guarantee_letter_form
+msgid "Confirm"
+msgstr "تاكيد"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_purchase_order_form
+msgid "Confirm Order"
+msgstr "تاكيد الطلب"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__guarantee_letter__state__confirmed
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__state__confirmed
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Confirmed"
+msgstr "مؤكد"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__constrained_by_ids
+msgid "Constrained By"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_contracts_view
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__contract_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__contract_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__contract_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__contract_id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__contract_id
+msgid "Contract"
+msgstr "عقد"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "Contract Bills"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__contract_condition
+msgid "Contract Condition"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_contracts_form
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Contract Conditions"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__conditions
+msgid "Contract Important Terms"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "Contract Invoices"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__contract_language
+msgid "Contract Language"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__contract_line_ids
+msgid "Contract Line"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Contract Lines"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__contract_products_ids
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__contract_products_ids
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__contract_products_ids
+msgid "Contract Products"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__contract_project_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__contract_project_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__contract_project_id
+msgid "Contract Project"
+msgstr "مشروع العقد"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__contract_quotation_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__contract_quotation_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__contract_quotation_id
+msgid "Contract Quotation"
+msgstr "تسعير العقد"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_tax__is_contract_tax
+msgid "Contract Tax"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__terms_conditions
+msgid "Contract Terms and Conditions"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__contract_type
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__contract_type_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__contract_type
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__contract_type_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__contract_type
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__contract_type_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__contract_type
+msgid "Contract Type"
+msgstr "نوع العقد"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__contract_value
+msgid "Contract Value"
+msgstr "قيمة العقد"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__account_move__contract_type__contractor
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__type__contractor
+msgid "Contractor"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.ui.menu,name:wc_construction.menu_contractors_invoices_categ
+msgid "Contractor Invoices"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__type
+msgid "Contractor Type"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.ui.menu,name:wc_construction.menu_construction_contracts_categ
+#: model:ir.ui.menu,name:wc_construction.menu_contracts_view
+msgid "Contracts"
+msgstr "العقود"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__counterpart_account_id
+msgid "Counterpart Account"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Create Bill"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Create Invoice"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_types__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_projects_wizard_report__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line__create_uid
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_types__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_projects_wizard_report__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line__create_date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__customer_id
+#: model_terms:ir.ui.view,arch_db:wc_construction.print_report_template_projects
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_work_plan_form
+msgid "Customer"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__customer_account_id
+msgid "Customer Account"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__customer_account_id
+msgid "Customer/Subcontractor Account"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__date
+msgid "Date"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid ""
+"Days /\n"
+"                                    <span style=\"font-weight: bold;padding-left:15px;padding-right:15px;\">Constrained\n"
+"                                        By\n"
+"                                    </span>"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__deduction_ids
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__deduction_ids
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__deduction_ids
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__deduction_accounts_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__deduction_ids
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__deduction_accounts_id
+#: model:ir.model.fields.selection,name:wc_construction.selection__deduction_accounts__deduction_type__deduction
+#: model:ir.ui.menu,name:wc_construction.menu_deduction_accounts_view
+msgid "Deduction"
+msgstr "الخصومات"
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_deduction_accounts_view
+msgid "Deduction Accounts"
+msgstr "حسابات الخصومات"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__deduction_journal_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__deduction_journal_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__deduction_journal_id
+msgid "Deduction Journal"
+msgstr "قيد الخصم"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Deductions"
+msgstr "الخصومات"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Delete"
+msgstr "مسح"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__delete_line
+msgid "Delete Line"
+msgstr "حذف سطر"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__account_move__state__dep_approved
+#: model:ir.model.fields.selection,name:wc_construction.selection__purchase_order__state__dep_approved
+msgid "Department Approved"
+msgstr "موافقة القسم"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__description
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Description"
+msgstr "وصف"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__discount_amount
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__discount_amount
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__discount_amount
+msgid "Discount"
+msgstr "خصم"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_account_tax__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_types__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_product_product__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_product_template__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_project_project__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_project_tender__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_projects_wizard_report__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_report_wc_construction_print_report_template_projects__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_sale_order__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_sale_order_line__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line__display_name
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "Down Payment & Retention & Performance"
+msgstr "الدفعة المقدمة والاحتفاظ والأداء"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__down_payment_fixed
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__down_payment_fixed
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__down_payment_fixed
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__down_payment_fixed
+msgid "Down Payment Fixed"
+msgstr "دفعة مقدمة ثابتة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__down_payment_journal_id
+msgid "Down Payment Journal"
+msgstr "قيد دفعة مقدمة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__down_payment_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__down_payment_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__down_payment_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__down_payment_account_id
+msgid "Down Payment Type"
+msgstr "نوع الدفعة المقدمة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__down_payment_percentage
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__down_payment_percentage
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__down_payment_percentage
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__down_payment_percentage
+msgid "Down Payment(%)"
+msgstr "الدفعة المقدمة"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__deduction_accounts__deduction_type__down_payment
+msgid "Down Payments"
+msgstr "الدفعات المقدمة"
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_down_payments_accounts_view
+#: model:ir.ui.menu,name:wc_construction.menu_down_payments_accounts_view
+msgid "Down Payments Accounts"
+msgstr "حسابات الدفعات المقدمة"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__guarantee_letter__state__draft
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.print_report_template_projects
+msgid "Due Date"
+msgstr "تاريخ الاستحقاق"
+
+#. module: wc_construction
+#: code:addons/wc_construction/models/account_move.py:0
+#, python-format
+msgid ""
+"Duplicated vendor reference detected. You probably encoded twice the same vendor bill/credit note:\n"
+"%s"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__difference_days
+msgid "Duration"
+msgstr "مدة"
+
+#. module: wc_construction
+#: model:ir.actions.report,name:wc_construction.print_report_id_projects
+msgid "EDC Projects"
+msgstr "المشروعات"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__subcontractor_type__electricity
+msgid "Electricity"
+msgstr "الكهربية"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__contract_language__english
+msgid "English"
+msgstr "انجليزية"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__contract_condition__fidic
+msgid "Fidic"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__invoice_final
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__invoice_final
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__invoice_final
+msgid "Final Subcontractor Invoice"
+msgstr "الفاتورة النهائية للمقاول من الباطن"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_purchase_order_form
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "GM Approve"
+msgstr "موافقة المدير العام"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__account_move__state__gm_approved
+#: model:ir.model.fields.selection,name:wc_construction.selection__purchase_order__state__gm_approved
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_purchase_order_filter
+msgid "GM Approved"
+msgstr "وافق المدير العام"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_edit_project
+msgid "Guar Letter"
+msgstr "خطاب الضمان"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__guarantee_id
+msgid "Guarantee"
+msgstr "خطاب الضمان"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_project_project__guarantee_count
+msgid "Guarantee Count"
+msgstr "حساب خطاب الضمان"
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_guarantee_letter_view
+msgid "Guarantee Letter"
+msgstr "خطاب الضمان"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_edit_project
+msgid "Guarantee Letter Request"
+msgstr "طلب خطاب الضمان"
+
+#. module: wc_construction
+#: model:ir.ui.menu,name:wc_construction.menu_guarantee_letter_view
+msgid "Guarantee Letters"
+msgstr "خطاب الضمان"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__guarantee_line_ids
+msgid "Guarantee Line"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_guarantee_types
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__type_id
+#: model:ir.ui.menu,name:wc_construction.menu_guarantee_types_view
+msgid "Guarantee Types"
+msgstr "نوع خطابات الضمان"
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_guarantee_types_view
+msgid "Guarantee types"
+msgstr "نوع خطابات الضمان"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__id
+#: model:ir.model.fields,field_description:wc_construction.field_account_tax__id
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by__id
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__id
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct__id
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__id
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__id
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__id
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_types__id
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__id
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__id
+#: model:ir.model.fields,field_description:wc_construction.field_product_product__id
+#: model:ir.model.fields,field_description:wc_construction.field_product_template__id
+#: model:ir.model.fields,field_description:wc_construction.field_project_project__id
+#: model:ir.model.fields,field_description:wc_construction.field_project_tender__id
+#: model:ir.model.fields,field_description:wc_construction.field_projects_wizard_report__id
+#: model:ir.model.fields,field_description:wc_construction.field_purchase_order__id
+#: model:ir.model.fields,field_description:wc_construction.field_report_wc_construction_print_report_template_projects__id
+#: model:ir.model.fields,field_description:wc_construction.field_sale_order__id
+#: model:ir.model.fields,field_description:wc_construction.field_sale_order_line__id
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat__id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items__id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line__id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__id
+#: model_terms:ir.ui.view,arch_db:wc_construction.print_report_template_projects
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__constrained_by__type__ifc_drawings
+msgid "IFC drawings"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__message_needaction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__message_has_error
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__insurance_form
+msgid "Insurance"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Invoices"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Invoicing Address:"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Invoicing and Shipping Address:"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__is_contract_invoice
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__is_contract_invoice
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__is_contract_invoice
+msgid "Is Contract Invoice"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__is_deduction
+#: model:ir.model.fields,field_description:wc_construction.field_product_product__is_deduction
+#: model:ir.model.fields,field_description:wc_construction.field_product_template__is_deduction
+msgid "Is Deduction"
+msgstr "خصومات؟"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__is_down_payment
+msgid "Is Down Payment ?"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__is_need_approve
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__is_need_approve
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__is_need_approve
+msgid "Is Need Approve"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_purchase_order__is_need_confirm
+msgid "Is Need Confirm"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__is_percentage
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__is_percentage
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__is_percentage
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__is_percentage
+msgid "Is Percentage"
+msgstr "نسبة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__is_percentage
+msgid "Is Percentage ?"
+msgstr "نسبة؟"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_product_product__is_tender_item
+#: model:ir.model.fields,field_description:wc_construction.field_product_template__is_tender_item
+msgid "Is Tender Item"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__is_final_downpaymet_line
+msgid "Is final downpayment Line"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__journal_id
+msgid "Journal"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_account_move
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__p_d_r_journal
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__p_d_r_journal
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__p_d_r_journal
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_analytic_line____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_account_move____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_account_tax____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_contracts____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_types____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_product_product____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_product_template____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_project_project____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_project_tender____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_projects_wizard_report____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_report_wc_construction_print_report_template_projects____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_sale_order____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_sale_order_line____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line____last_update
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_types__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_projects_wizard_report__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line__write_uid
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_types__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_projects_wizard_report__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line__write_date
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__lines_updated
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__lines_updated
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__lines_updated
+msgid "Lines Updated"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__contract_type__lamsum
+msgid "Lumpsum"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__subcontractor_type__mechanics
+msgid "Mechanics"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__move_id
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__move_id
+msgid "Move"
+msgstr "حركة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by__name
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__name
+#: model:ir.model.fields,field_description:wc_construction.field_deduct_deduct__name
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__name
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__name
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_types__name
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__name
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__name
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__description
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__name
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__name
+#: model:ir.model.fields,field_description:wc_construction.field_talyat_talyat__name
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line__name
+msgid "Name"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__total_with_deduct_addition
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__total_with_deduct_addition
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__total_with_deduct_addition
+msgid "Net Total"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_edit_project
+msgid "New Quotation"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter_line__note
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__note
+msgid "Note"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.project_report_form
+msgid "OR"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Order #"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__owner_cont_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__owner_cont_id
+msgid "Owner Cont"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__is_owner_contract
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__owner_contract_id
+msgid "Owner Contract"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_owner_contract_invoices_view
+msgid "Owner Contractor Invoice"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__owner_contractor_invoice_count
+msgid "Owner Contractor Invoice Count"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.ui.menu,name:wc_construction.menu_owner_contractor_invoices_view
+msgid "Owner Contractor Invoices"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_owner_contract_view
+#: model:ir.ui.menu,name:wc_construction.menu_owner_comtracts_view
+msgid "Owner Contracts"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__partner_id
+msgid "Partner"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__payment_method_id
+msgid "Payment Method"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__payment_term_id
+msgid "Payment Term"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__percentage_value
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__percentage_value
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__percentage_value
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__percentage_value
+msgid "Percentage/Value"
+msgstr "القيمة/النسبة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__performance_amount
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__performance_amount
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__performance_amount
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__performance_amount
+msgid "Performance Amount"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__performance_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__performance_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__performance_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__performance_account_id
+msgid "Performance Type"
+msgstr "نوع الأداء"
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__deduction_accounts__deduction_type__performance_bond
+msgid "Performance bond"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__performance
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__performance
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__performance
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__performance
+msgid "Performance bond (%)"
+msgstr "التأمينات النهائية (٪)"
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_performance_bond_accounts_view
+#: model:ir.ui.menu,name:wc_construction.menu_performance_bond_accounts_view
+msgid "Performance bond Accounts"
+msgstr "حسابات الضمان"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_work_plan_items_form
+msgid "Plan Lines"
+msgstr "خطوط الخطة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "Post"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__prev_contract_bills
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__prev_contract_bills
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__prev_contract_bills
+msgid "Prev Contract Bills"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__prev_contract_invoices
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__prev_contract_invoices
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__prev_contract_invoices
+msgid "Prev Contract Invoices"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__price_unit2
+msgid "Price"
+msgstr "السعر"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.project_report_form
+msgid "Print"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.report,name:wc_construction.owner_contract_invoice_report
+msgid "Print Contract Invoice"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.project_report_form
+msgid "Print projects details"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_product_product
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__product_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_project_project
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__project_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__project_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__project_contract_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__project_id
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__project_id
+#: model:ir.model.fields,field_description:wc_construction.field_sale_order__project_id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__project_id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items__project_id
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_account_move_line_filter
+msgid "Project"
+msgstr "المشروع"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__project_end_date
+msgid "Project End Date"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__project_location_id
+msgid "Project Location"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__project_id
+#: model_terms:ir.ui.view,arch_db:wc_construction.print_report_template_projects
+msgid "Project Name"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.print_report_template_projects
+msgid "Projects Report"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.projects_report_form_action
+#: model:ir.ui.menu,name:wc_construction.projects_report_details
+msgid "Projects report"
+msgstr ""
+
+#. module: wc_construction
+#: model:res.groups,name:wc_construction.rfq_pm_approve
+msgid "Purchase Manager Approve"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_purchase_order
+msgid "Purchase Order"
+msgstr "أمر شراء"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__quantity
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__quantity
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Quantity"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__quotation_id
+msgid "Quotation"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Quotation #"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.report,name:wc_construction.action_report_saleorder_with_no_tax
+msgid "Quotation / Order With No Tax Line"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_project_project__quotation_count
+msgid "Quotation Count"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__quotation_number_id
+#: model:ir.model.fields,field_description:wc_construction.field_project_project__so_id
+msgid "Quotation Number"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_edit_project
+msgid "Quotations"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__ref
+msgid "Reference"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.print_report_template_projects
+msgid "Request Date"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__activity_user_id
+msgid "Responsible User"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__deduction_accounts__deduction_type__retention
+msgid "Retention"
+msgstr "احتفاظ"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__retation_amount
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__retation_amount
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__retation_amount
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__retation_amount
+msgid "Retention (%)"
+msgstr "الحجز (٪)"
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_retention_accounts_view
+#: model:ir.ui.menu,name:wc_construction.menu_retention_accounts_view
+msgid "Retention Accounts"
+msgstr "حسابات الحجز"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__retation_amount_value
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__retation_amount_value
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__retation_amount_value
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__retation_amount_value
+msgid "Retention Amount"
+msgstr "مبلغ الحجز"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__retention_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__retention_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__retention_account_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__retention_account_id
+msgid "Retention Type"
+msgstr "انواع الحجز"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__revenue_account_id
+msgid "Revenue Account"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__revenue_account_id
+msgid "Revenue/Expense Account"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_sale_order
+msgid "Sales Order"
+msgstr "أمر البيع"
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "بند أمر المبيعات"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: account
+#: model_terms:ir.ui.view,arch_db:account.view_move_form
+msgid "Cancel Entry"
+msgstr "إلغاء القيد"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__partner_bank_id
+#: model:ir.model.fields,field_description:account.field_account_move__partner_bank_id
+msgid "Recipient Bank"
+msgstr "البنك المستلم"
+
+#. module: account
+#: model:ir.model.fields,field_description:account.field_account_bank_statement_line__inalterable_hash
+#: model:ir.model.fields,field_description:account.field_account_move__inalterable_hash
+#: model:ir.model.fields,field_description:account.field_account_payment__inalterable_hash
+msgid "Inalterability Hash"
+msgstr "تجزئة غير قابلة للتغيير"
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_sale_order__project_id
+msgid "Select a non billable project on which tasks can be created."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__name
+msgid "Seq"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__constrained_by__type__signing_of_contract
+msgid "Signing of Contract"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields.selection,name:wc_construction.selection__constrained_by__type__site_handover
+msgid "Site Handover"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__site_receive_date
+msgid "Site Receive Date"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__state
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__state
+#: model_terms:ir.ui.view,arch_db:wc_construction.print_report_template_projects
+msgid "State"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__state
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__state
+#: model:ir.model.fields,field_description:wc_construction.field_purchase_order__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__sub_contractor_invoice_count
+msgid "Sub Contractor Invoice Count"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_subcontractor_contract_view
+#: model:ir.ui.menu,name:wc_construction.menu_subcontractor_comtracts_view
+msgid "SubContractor Contracts"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_sub_contract_invoices_view
+msgid "SubContractor Invoice"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.ui.menu,name:wc_construction.menu_sub_contractor_invoices_view
+msgid "SubContractor Invoices"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__subcontractor_id
+#: model:ir.model.fields.selection,name:wc_construction.selection__account_move__contract_type__subcontractor
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__type__subcontractor
+msgid "Subcontractor"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_contracts__is_subcontractor_contract
+msgid "Subcontractor Contract"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__subcontractor_type
+msgid "Subcontractor Type"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__submission_date
+msgid "Submission Date"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__price_subtotal
+msgid "Subtotal"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_account_tax
+msgid "Tax"
+msgstr "الضريبة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__x_studio_related_field_99qNi
+msgid "Tax ID"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__tax_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__tax_id
+msgid "Taxes"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_guarantee_letter__tender_qty
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__tender_quantity
+msgid "Tender Quantity"
+msgstr "الكمية المعطاه"
+
+#. module: wc_construction
+#: code:addons/wc_construction/models/account_move.py:0
+#, python-format
+msgid ""
+"The %(date_field)s (%(date)s) doesn't match the %(sequence_field)s (%(sequence)s).\n"
+"You might want to clear the field %(sequence_field)s before proceeding with the change of the date."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__x_studio_related_field_99qNi
+msgid ""
+"The Tax Identification Number. Complete it if the contact is subjected to "
+"government taxes. Used in some legal statements."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_account_bank_statement_line__amount_words
+#: model:ir.model.fields,help:wc_construction.field_account_move__amount_words
+#: model:ir.model.fields,help:wc_construction.field_account_payment__amount_words
+msgid ""
+"The invoice total amount in words is automatically generated by the "
+"system..few languages are supported currently"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Total"
+msgstr "إجمالي"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__total_additions
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__total_additions
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__total_additions
+msgid "Total Additions"
+msgstr "إجمالي الإضافات"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__all_total_amount_invoices
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__all_total_amount_invoices
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__all_total_amount_invoices
+msgid "Total Amount"
+msgstr "الاجمالي"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__total_deductions
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__total_deductions
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__total_deductions
+msgid "Total Deductions"
+msgstr "مجموع الخصومات"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__total_down_payment
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__total_down_payment
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__total_down_payment
+msgid "Total Down Payment"
+msgstr "إجمالي الدفعة المقدمة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__total_performance
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__total_performance
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__total_performance
+msgid "Total Performance"
+msgstr "الاجمالي الكلي"
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Total Price"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__total_work_plan_qty
+msgid "Total Qty"
+msgstr "اجمالي الكمية"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__total_retention
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__total_retention
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__total_retention
+msgid "Total Retention"
+msgstr "إجمالي الحجز"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_constrained_by__type
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__deduction_type
+msgid "Type"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__product_uom_id
+msgid "Unit Of Measure"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__price_unit
+#: model:ir.model.fields.selection,name:wc_construction.selection__owner_contract__contract_type__unit_price
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_saleorder_document_without_tax_linr
+msgid "Unit Price"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "Update Deduction Lines"
+msgstr "تحديث الخصومات"
+
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__update_product
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__update_product
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__update_product
+msgid "Update Products"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "Validate"
+msgstr "تاكيد "
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__validate_done_approve
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__validate_done_approve
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__validate_done_approve
+msgid "Validated"
+msgstr "مؤكد"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_addition__value
+#: model:ir.model.fields,field_description:wc_construction.field_invoice_deduction__value
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_addition__value
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_deduction__value
+msgid "Value"
+msgstr "قيمة"
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__customer_id
+msgid "Vendor"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,help:wc_construction.field_owner_contract__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Work Item"
+msgstr "عنصر العمل"
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_work_plan_view
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract__work_plan_id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__work_plan_id
+#: model:ir.ui.menu,name:wc_construction.menu_work_plan_categ
+#: model:ir.ui.menu,name:wc_construction.menu_work_plan_view
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_work_plan_form
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_work_plan_tree
+msgid "Work Plan"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_move_line__work_plan_item_id
+#: model:ir.model.fields,field_description:wc_construction.field_owner_contract_line__work_plan_item_id
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__work_plan_item_id
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_work_plan_items_form
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_work_plan_items_tree
+msgid "Work Plan Item"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_work_plan_items_view
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items_line__work_plan_items_id
+#: model:ir.ui.menu,name:wc_construction.menu_work_plan_items_view
+msgid "Work Plan Items"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_items__work_plan_items_line_ids
+msgid "Work Plan Items Line"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan__work_plan_line_ids
+msgid "Work Plan Line"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_work_plan_form
+msgid "Work Plan Lines"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_owner_contract_form
+msgid "Write Contract Name"
+msgstr ""
+
+#. module: wc_construction
+#: code:addons/wc_construction/models/account_move.py:0
+#, python-format
+msgid "You must update deduction lines first.."
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_constrained_by
+msgid "constrained.by"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_contracts
+msgid "contracts"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_deduct_deduct
+msgid "deduct.deduct"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_deduction_accounts
+msgid "deduction.accounts"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_guarantee_letter
+msgid "guarantee.letter"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_guarantee_letter_line
+msgid "guarantee.letter.line"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_invoice_addition
+msgid "invoice.addition"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_invoice_deduction
+msgid "invoice.deduction"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_owner_contract
+msgid "owner.contract"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_owner_contract_addition
+msgid "owner.contract.addition"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_owner_contract_deduction
+msgid "owner.contract.deduction"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_owner_contract_line
+msgid "owner.contract.line"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_project_tender
+msgid "project.tender"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_projects_wizard_report
+msgid "projects.wizard.report"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_report_wc_construction_print_report_template_projects
+msgid "report.wc_construction.print_report_template_projects"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_talyat_talyat
+msgid "talyat.talyat"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_work_plan_line__product_id
+msgid "tender Item"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_work_plan
+msgid "work.plan"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_work_plan_items
+msgid "work.plan.items"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_work_plan_items_line
+msgid "work.plan.items.line"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model,name:wc_construction.model_work_plan_line
+msgid "work.plan.line"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "إجمالى"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"إجمالى\n"
+"                                    الحسومات\n"
+"                                    الاخرى"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_tax__down_payment_tax_account_id
+msgid "إستحقاق دفعه مقدمه"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "إيرادات اخـرى"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_deduction_accounts__down_payment_account_id
+msgid "استحقاق دفعة مقدمه"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__deductions
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__deductions
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__deductions
+msgid "استقطاعات"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_deductions_view
+msgid "استقطـاعات"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__deductions_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__deductions_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__deductions_id
+#: model:ir.ui.menu,name:wc_construction.menu_deductions_view
+msgid "استقطــاعات"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__total_amount_invoices_all_cashing_done
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__total_amount_invoices_all_cashing_done
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__total_amount_invoices_all_cashing_done
+msgid "الإجمالي الحالي"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.view_inherit_view_move_form
+msgid "الاجمالى"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "البـيـان"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"السعر\n"
+"                                الافرادى"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"الكـمـيـات\n"
+"                                المـنـفـذة"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "الكـمـيـة"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"الكمية\n"
+"                                المعدلة"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "المـبـلغ"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "الوحــدة"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "الوصـــف"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__talyat
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__talyat
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__talyat
+msgid "تعليات"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__talyat_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__talyat_id
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__talyat_id
+msgid "تعليــات"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.actions.act_window,name:wc_construction.action_talyat_view
+#: model:ir.ui.menu,name:wc_construction.menu_talyat_view
+msgid "تعليـــات"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid ""
+"تـكلفـة\n"
+"                                الاعمال<br/>المنـفـذة"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "حاليا"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "رقم الجدول"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "سابقا"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__all_cashing_done
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__all_cashing_done
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__all_cashing_done
+msgid "ما تم تحصيلة"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__cashing_done
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__cashing_done
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__cashing_done
+msgid "ما تم صرفه"
+msgstr ""
+
+#. module: wc_construction
+#: model:ir.model.fields,field_description:wc_construction.field_account_bank_statement_line__previous_chashing
+#: model:ir.model.fields,field_description:wc_construction.field_account_move__previous_chashing
+#: model:ir.model.fields,field_description:wc_construction.field_account_payment__previous_chashing
+msgid "ما سبق دفعه من اجمالي العقد"
+msgstr ""
+
+#. module: wc_construction
+#: model_terms:ir.ui.view,arch_db:wc_construction.report_owner_contract_document
+msgid "مــــسـتـخـلـص جـارى رقم ("
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.invoice_supplier_form_inherit
+msgid "Project Information"
+msgstr "معلومات المشروع"

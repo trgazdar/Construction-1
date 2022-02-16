@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="id_net_salary_form" model="ir.ui.view">
+            <field name="name">Net Salary Form</field>
+            <field name="model">net.salary</field>
+            <field name="arch" type="xml">
+                <form string="Net Salary Form">
+                    <group>
+                        <group>
+                            <field name="date_from"/>
+                            <field name="date_to"/>
+                            <field name="number_unit_ids" widget="many2many_tags"/>
+                        </group>
+                        <group>
+                            <field name="company_id"/>
+                            <field name="employee_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                    <footer>
+                        <button string="Print" name="get_net_salary" type="object" class="btn-primary"/>
+                        <button string="Cancel" class="btn-default" special="cancel"/>
+                    </footer>
+                </form>
+            </field>
+        </record>
+        <record id="id_net_salary_action" model="ir.actions.act_window">
+            <field name="name">Net Salary</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">net.salary</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+        <menuitem id="id_net_salary_menu" name="مرتبات السعودية" parent="hr_payroll.menu_hr_payroll_report"
+                  action="id_net_salary_action" sequence="2"/>
+        <report id="id_net_salary_report"
+                model="net.salary"
+                string="Print Net Salary"
+                report_type="qweb-pdf"
+                file="print_net_salary_employee.id_net_salary_template"
+                name="print_net_salary_employee.id_net_salary_template"
+                attachment_use="False"/>
+    </data>
+</odoo>

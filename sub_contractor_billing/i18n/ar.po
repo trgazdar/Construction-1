@@ -1,0 +1,601 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* sub_contractor_billing
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 08:51+0000\n"
+"PO-Revision-Date: 2022-01-11 08:51+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__completed_percentage
+msgid "% Completed"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.project_edit_project_inherit
+msgid "<span class=\"o_form_label oe_inline\"> Days</span>"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.report_payment_receipt_document_inherit
+msgid "<span>Amount Paid</span>"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.report_payment_receipt_document_inherit
+msgid "<span>Balance</span>"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.report_payment_receipt_document_inherit
+msgid "<span>Invoice Date</span>"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.report_payment_receipt_document_inherit
+msgid "<span>Invoice Number</span>"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.report_payment_receipt_document_inherit
+msgid "<span>Original Amount</span>"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.report_payment_receipt_document_inherit
+msgid "<span>Project Name</span>"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__account_move_no
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__account_move_no
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__account_move_no
+msgid "Account Move No"
+msgstr "رقم الحساب"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__actual_quant
+msgid "Actual Quantity"
+msgstr "الكمية الفعلية"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__attachment_ids
+msgid "Attachment"
+msgstr "الملحقات"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__client_manager
+msgid "Client Manager"
+msgstr "مدير العملاء"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__client_specialist_id
+msgid "Client Specialist"
+msgstr "متخصص العملاء"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__notes
+msgid "Comment"
+msgstr "تعليق"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.project_edit_project_inherit
+msgid "Confirm"
+msgstr "تاكيد"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__contract_date
+msgid "Contract Date"
+msgstr "تاريخ العقد"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.invoice_supplier_form_inherit
+msgid "Contract Invoice"
+msgstr "فاتورة العقد"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.purchase_purchase_order_form_inherit
+msgid "Contractor Name"
+msgstr "اسم المتعاقد"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__create_uid
+msgid "Created by"
+msgstr "تم العمل بواسطة"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__create_date
+msgid "Created on"
+msgstr "تم العمل في"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.invoice_supplier_form_inherit
+msgid "Current Amount"
+msgstr "المبلغ الحالي"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.invoice_supplier_form_inherit
+msgid "Current QTY"
+msgstr "الكمية الحالية"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__current_qty2
+msgid "Current Qty"
+msgstr "الكمية الحالية"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_material_purchase_requisition__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_material_purchase_requisition_line__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_sale_advance_payment_inv__display_name
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_sale_order_line__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields.selection,name:sub_contractor_billing.selection__project_project__state__draft
+msgid "Draft"
+msgstr "مسودة"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__extra_duration
+msgid "Extra Duration"
+msgstr "مدة اضافية"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.invoice_supplier_form_inherit
+msgid "Extra Information"
+msgstr "معلومات اضافية"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__final_delivery
+msgid "Final Delivery Date"
+msgstr "اخر معاد للاستلام"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__final_invoice
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__final_invoice
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__final_invoice
+msgid "Final Invoice"
+msgstr "اخر فاتورة"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__hold_date
+msgid "Hold Date"
+msgstr "عقد التاريخ"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.project_edit_project_inherit
+msgid "Hold/Resume Dates"
+msgstr "عقد / استئناف التواريخ"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_material_purchase_requisition__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_material_purchase_requisition_line__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_sale_advance_payment_inv__id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_sale_order_line__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields.selection,name:sub_contractor_billing.selection__project_project__state__in_hand
+msgid "In Hand"
+msgstr "معلق"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields.selection,name:sub_contractor_billing.selection__project_project__state__in_progress
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.project_edit_project_inherit
+msgid "In Progress"
+msgstr "يعمل"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__job_type_id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__job_type_id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__job_type_id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__job_type
+msgid "Job Type"
+msgstr "نوع العمل"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__task_count
+msgid "Job order Count"
+msgstr "عدد الاعمال"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__task_ids
+msgid "Job orders"
+msgstr "اوامر العمل"
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,help:sub_contractor_billing.field_project_project__label_tasks
+msgid "Label used for the Job orders of the project."
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_material_purchase_requisition____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_material_purchase_requisition_line____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_sale_advance_payment_inv____last_update
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_sale_order_line____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__location_acquisition_date
+msgid "Location Acquisition Date"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__maintenance_duration
+msgid "Maintenance Duration"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.invoice_supplier_form_inherit
+msgid "Net to be paid"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: code:addons/sub_contractor_billing/models/material_purchase_requisition_changes.py:0
+#, python-format
+msgid "PLease Enter Atleast One Vendor on Requisition Lines"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__period_from
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__period_from
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__period_from
+msgid "Period From"
+msgstr "الفترة من "
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__period_to
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__period_to
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__period_to
+msgid "Period To"
+msgstr "الفترة الي"
+
+#. module: sub_contractor_billing
+#: code:addons/sub_contractor_billing/models/material_purchase_requisition_changes.py:0
+#, python-format
+msgid "Please create some requisition lines."
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__previous_invoice_id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__previous_invoice_id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__previous_invoice_id
+msgid "Previous Invoice"
+msgstr "الفاتورة السابقة"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__previous_qty
+msgid "Previous QTY"
+msgstr "الكمية السابقة"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__primary_delivery_date
+msgid "Primary Delivery Date"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_material_purchase_requisition__procurement_id
+msgid "Procurement"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_material_purchase_requisition_line__procurement_line_id
+msgid "Procurement Line"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_project_project
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__project_id
+msgid "Project"
+msgstr "المشروع"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__project_start_date
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__project_start_date
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__project_start_date
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__project_start_date
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__project_start_date
+msgid "Project Beginning"
+msgstr "بداية المشروع"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__project_dates_ids
+msgid "Project Dates"
+msgstr "تواريخ المشروع"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__project_end_date
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__project_end_date
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__project_end_date
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__project_end_date
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__project_end_date
+msgid "Project End Date"
+msgstr "تاريخ انتهاء المشروع"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.invoice_supplier_form_inherit
+msgid "Project Information"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__project_name_id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__project_name_id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__project_name_id
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__p_project_id
+msgid "Project Name"
+msgstr "اسم المشروع"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__project_no
+msgid "Project No."
+msgstr "رقم المشروع"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__project_no
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__project_no
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__project_no
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__project_no
+msgid "Project Number"
+msgstr "رقم المشروع"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__project_period
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__project_period
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__project_period
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__project_period
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__project_period
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.project_edit_project_inherit
+msgid "Project Period"
+msgstr "مدة المشروع"
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_purchase_order
+msgid "Purchase Order"
+msgstr "أمر شراء"
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "بند أمر الشراء"
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_material_purchase_requisition
+msgid "Purchase Requisition"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order_line__recently_done_qty
+msgid "Recently Done"
+msgstr "تم مؤخرًا"
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order_line_qty_invoiced
+msgid "Billed Qty"
+msgstr "الكمية المطلوبة"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order_line__recently_done_update
+msgid "Recently Done Update"
+msgstr "تم التحديث مؤخرًا"
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.project_edit_project_inherit
+msgid "Refuse"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields.selection,name:sub_contractor_billing.selection__project_project__state__refused
+msgid "Refused"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_dates__restart_date
+msgid "Restart Date"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "فاتورة الدفعة المقدمة للمبيعات"
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "بند أمر المبيعات"
+
+#. module: sub_contractor_billing
+#: code:addons/sub_contractor_billing/models/material_purchase_requisition_changes.py:0
+#, python-format
+msgid "Select Destination location under the picking details."
+msgstr ""
+
+#. module: sub_contractor_billing
+#: code:addons/sub_contractor_billing/models/material_purchase_requisition_changes.py:0
+#, python-format
+msgid "Select Picking Type under the picking details."
+msgstr ""
+
+#. module: sub_contractor_billing
+#: code:addons/sub_contractor_billing/models/material_purchase_requisition_changes.py:0
+#, python-format
+msgid "Select Source location under the picking details."
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__sent
+msgid "Sent"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__state
+msgid "Status"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,help:sub_contractor_billing.field_project_project__state
+msgid "Status of the Tender"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__stock_location_id
+msgid "Stock Location"
+msgstr ""
+
+#. module: purchase
+#: model:ir.ui.menu,name:purchase.menu_purchase_uom_categ_form_action
+msgid "Units of Measure Categories"
+msgstr "فئات وحدات القياس"
+
+#. module: sale
+#: model:ir.ui.menu,name:sale.menu_product_uom_categ_form_action
+msgid "Units of Measure Categories"
+msgstr "فئات وحدات القياس"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_bank_statement_line__sub_contractor
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move__sub_contractor
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_payment__sub_contractor
+msgid "Sub Contractor Invoice"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_purchase_order__job_order_id
+msgid "Task / Job Order"
+msgstr "المهمه/طلب العمل"
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__tender_amount
+msgid "Tender Amount"
+msgstr "المبلغ المعطي"
+
+#. module: sub_contractor_billing
+#: model:res.groups,name:sub_contractor_billing.tender_confirm_approve
+msgid "Tender Confirm"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__tender_team_ids
+msgid "Tender Persons"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__tender_qty
+msgid "Tender Qty"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__submission_date
+msgid "Tender Submission Date"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__tender_team_id
+msgid "Tender Team"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__total_amount
+msgid "Total Amount"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__total_contract_qty
+msgid "Total Contract QTY"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_account_move_line__total_qty
+msgid "Total QTY "
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.project_edit_project_inherit
+msgid "Update"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__label_tasks
+msgid "Use Job orders as"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__validity_date
+msgid "Validity date"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.invoice_supplier_form_inherit
+#: model_terms:ir.ui.view,arch_db:sub_contractor_billing.purchase_purchase_order_form_inherit
+msgid "Work Item"
+msgstr "عنصر العمل"
+
+#. module: sub_contractor_billing
+#: code:addons/sub_contractor_billing/models/project_changes.py:0
+#, python-format
+msgid "You should add related job order in project tender lines.."
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model.fields,field_description:sub_contractor_billing.field_project_project__invitation_date
+msgid "invitation date"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_material_purchase_requisition_line
+msgid "material.purchase.requisition.line"
+msgstr ""
+
+#. module: sub_contractor_billing
+#: model:ir.model,name:sub_contractor_billing.model_project_dates
+msgid "project.dates"
+msgstr ""

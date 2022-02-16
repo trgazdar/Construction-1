@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="id_net_salary_format" model="report.paperformat">
+            <field name="name">Net Salary</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">297</field>
+            <field name="page_width">210</field>
+            <field name="orientation">Landscape</field>
+            <field name="margin_top">40</field>
+            <field name="margin_bottom">30</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">40</field>
+            <field name="dpi">90</field>
+        </record>
+        <template id="id_net_salary_template">
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <center style="background-color: yellow; color: black;">كشف الرواتب
+                        الشهرية للموظفين
+                    </center>
+                    <table width="100%">
+                        <tr>
+                            <td width="50%" class="text-left">
+                                تاريخ الى :
+                                <span class="m-0" t-esc="date_wizzerd['date_to']"/>
+                            </td>
+                            <td width="50%" class="text-right">
+                                تاريخ من :
+                                <span class="m-0" t-esc="date_wizzerd['date_from']"/>
+                            </td>
+                        </tr>
+                    </table>
+                    <br></br>
+                    <div class="col-13">
+                        <div style="border-bottom: 2px solid #000000;"/>
+                    </div>
+                    <br></br>
+                    <t t-foreach="number_unit_list" t-as="unit">
+                        <table width="100%">
+                            <tr>
+                                <td style="background-color: yellow; color: black;" width="25%" class="text-center">
+                                    <span class="m-0" t-esc="date_wizzerd['company']"/>
+                                </td>
+                                <td width="50%" class="text-center"></td>
+                                <td style="background-color: yellow; color: black;" width="25%" class="text-center">
+                                    موقع العمل :
+                                    <span class="m-0" t-esc="unit"/>
+                                </td>
+                            </tr>
+                        </table>
+                        <br></br>
+                        <table width="100%" style="font-size: 10px;">
+                            <thead>
+                                <tr>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="7%" class="text-center">صافى المستحق
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">الاجمالى
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="6%" class="text-center">اجازة بدون اذن
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="5%" class="text-center">اجازة عارضة
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">تأمينات
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">جزاءات
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="2%" class="text-center">سلف
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">الاجمالى
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">مكافأة
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="2%" class="text-center">اخرى
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">طعام
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="6%" class="text-center">طبيعة عمل
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">اتصالات
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">اضافى
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">انتقالات
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">السكن
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">الاساسى
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="4%" class="text-center">ايام العمل
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="8%" class="text-center">المهنة
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="10%" class="text-center">اسم الموظف
+                                    </th>
+                                    <th style="border: 1px solid black; background-color: yellow; color: black;"
+                                        width="8%" class="text-center">رقم الموظف
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr t-foreach="data" t-as="line">
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['صافى_المستحق']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['الاجمالى']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['اجازة_بدون_اذن']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['اجازة_عارضة']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['تأمينات']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['جزاءات']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['سلف']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['اجمالى_المستحقات']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['مكافأة']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['اخرى']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['طعام']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['طبيعة_عمل']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['اتصالات']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['اضافى']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['انتقالات']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['بدل_سكن']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['المرتب_الاساسى']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['work_day']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['jop']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['employee']"/>
+                                    </td>
+                                    <td class="text-center" style="border: 1px solid black;">
+                                        <span t-esc="line['code_employee']"/>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div t-attf-class="footer">
+                            <div class="text-center" style="border-top: 2px solid #1090C2;;">
+                                <br></br>
+                                <table width="100%">
+                                    <tr>
+                                        <td width="25%" class="text-center">
+                                            <strong>الرئيس والمدير العام</strong>
+                                        </td>
+                                        <td width="25%" class="text-center">
+                                            <strong>مدير الحسابات</strong>
+                                        </td>
+                                        <td width="25%" class="text-center">
+                                            <strong>مدير الشؤون الادارية</strong>
+                                        </td>
+                                        <td width="25%" class="text-center">
+                                            <strong>الشؤون الادارية</strong>
+                                        </td>
+                                    </tr>
+                                </table>
+                                <br></br>
+                                <div class="text-center page_number">
+                                    <div class="text-muted">
+                                        Page:
+                                        <span class="page"/>
+                                        of
+                                        <span class="topage"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </t>
+            </t>
+        </template>
+    </data>
+</odoo>

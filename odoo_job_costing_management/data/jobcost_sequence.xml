@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <data>
+        <record id="jobcosting_seq" model="ir.sequence">
+            <field name="name">Job Costing Sequence</field>
+            <field name="code">job.costing</field>
+            <field name="prefix">COST-SHEET/</field>
+            <field name="padding">5</field>
+        </record>
+        
+        <record id="joborder_seq" model = "ir.sequence">
+            <field name="name">Joborder Sequence</field>
+            <field name="code">project.task</field>
+            <field name="prefix">JOB/</field>
+            <field name="padding">5</field>
+        </record>
+        <record forcecreate="True" id="decimal_field" model="decimal.precision">
+            <field name="name">Payment Decimal</field>
+            <field name="digits">6</field>
+        </record>
+
+    </data>
+
+</odoo>
