@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+            <record id="paperformat_stock_card2" model="report.paperformat">
+                <field name="name">Stock A4</field>
+                <field name="default" eval="True" />
+                <field name="format">A4</field>
+                <field name="page_height">0</field>
+                <field name="page_width">0</field>
+                <field name="orientation">Portrait</field>
+                <field name="margin_top">28</field>
+                <field name="margin_bottom">28</field>
+                <field name="margin_left">2</field>
+                <field name="margin_right">2</field>
+                <field name="header_line" eval="False" />
+                <field name="header_spacing">24</field>
+                <field name="dpi">90</field>
+           </record>
+
+        <report
+                id="print_report_id"
+                model="stock.valuation.layer"
+                report_type="qweb-pdf"
+                string="Inventory Validation"
+                name="inventory_valuation.print_report"
+                file="inventory_valuation.print_report"
+                paperformat="inventory_valuation.paperformat_stock_card2"
+        />
+        <template id='print_report'>
+            <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                            <div>
+                                <h2 style="text-align:center">Inventory Validation Report</h2>
+                                <table class="table table-borderless"  style="border: 1px solid;">
+                                        <tr>
+                                            <th style="border:solid 1px; border-collapse: collapse;" align="center">Created on </th>
+                                            <th style="border:solid 1px; border-collapse: collapse;" align="center">Product</th>
+                                            <th style="border:solid 1px; border-collapse: collapse;" align="center">Quantity</th>
+                                            <th style="border:solid 1px; border-collapse: collapse;" align="center">Unit of Measure </th>
+                                            <th style="border:solid 1px; border-collapse: collapse;" align="center">Total Value </th>
+                                            <th style="border:solid 1px; border-collapse: collapse;" align="left">Company </th>
+                                        </tr>
+                                        <t t-foreach="lines" t-as="line">
+                                               <tr>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <p t-field="line.create_date"/>
+                                                   </td>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <p t-field="line.product_id.name"/>
+                                                   </td>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <p t-field="line.quantity"/>
+                                                   </td>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <p t-field="line.uom_id"/>
+                                                   </td>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <p t-field="line.value"/>
+                                                   </td>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <p t-field="line.company_id.name"/>
+                                                   </td>
+                                               </tr>
+                                        </t>
+                                </table>
+
+                            </div>
+                    </t>
+                </t>
+        </template>
+    </data>
+</odoo>

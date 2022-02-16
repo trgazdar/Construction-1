@@ -1,0 +1,97 @@
+<odoo>
+    <data>
+        <record id="hr_equipment_view_form_inherit2" model="ir.ui.view">
+            <field name="name">maintenance.equipment.inherit2</field>
+            <field name="model">maintenance.equipment</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='next_action_date']" position="after">
+                    <field name="maintenance_daily"/>
+                </xpath>
+                <xpath expr="//page[@name='description']/field[@name='note']" position="before">
+                    <group>
+                        <group>
+                                <field name="code"/>
+                                <field name="color"/>
+                                <field name="chasse_number"/>
+                                <field name="brand"/>
+                                <field name="made_in"/>
+                                <field name="year_made_in"/>
+                        </group>
+
+                    </group>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="daily_maintenance_view_tree" model="ir.ui.view">
+            <field name="name">daily.maintenance.view.tree</field>
+            <field name="model">daily.maintenance</field>
+            <field name="arch" type="xml">
+                <tree string="Daily Maintenance" editable="bottom">
+                    <field name="date"/>
+                    <field name="equipment_id" required="1"/>
+                    <field name="category_id"/>
+                    <field name="maintenance_team_id"/>
+                    <field name="employee_id"/>
+                    <field name="company_id"/>
+                    <field name="daily_work" required="1"/>
+                    <field name="request_done" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="daily_maintenance_view_tree_search" model="ir.ui.view">
+            <field name="name">daily.maintenance.view.tree.search</field>
+            <field name="model">daily.maintenance</field>
+            <field name="arch" type="xml">
+                <search string="Search">
+                    <field name="equipment_id"/>
+                    <field name="date"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Equipment" name="equipment" domain="[]" context="{'group_by':'equipment_id'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+
+        <record id="action_daily_maintenance_view_tree" model="ir.actions.act_window" >
+            <field name="name">Daily Maintenance</field>
+            <field name="res_model">daily.maintenance</field>
+            <field name="view_mode">tree,search</field>
+           <field name="view_id" ref="daily_maintenance_view_tree"/>
+            <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Add Daily maintenance
+            </p>
+        </field>
+        </record>
+
+        <menuitem
+            id="menu_daily_maintenance"
+            name="Daily Maintenance"
+            parent="maintenance.menu_equipment_form"
+            action="action_daily_maintenance_view_tree"
+            sequence="3"/>
+
+        <record id="maintenance_request_view_form_inherit" model="ir.ui.view">
+            <field name="name">maintenance.request.view.form.inherit</field>
+            <field name="model">maintenance.request</field>
+            <field name="inherit_id" ref="maintenance.hr_equipment_request_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//sheet/group/group[2]" position="after">
+                    <group>
+                        <field name="date_after_maintenance"/>
+                        <field name="maintenance_employee"/>
+                        <field name="location_to"/>
+                        <field name="location_from"/>
+                        <field name="employee"/>
+                    </group>
+                </xpath>
+            </field>
+       </record>
+
+    </data>
+</odoo>

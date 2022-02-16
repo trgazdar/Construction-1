@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+       <record id="id_employee_number_unit_tree" model="ir.ui.view">
+           <field name="name">employee number unit tree</field>
+           <field name="model">number.unit</field>
+           <field name="arch" type="xml">
+               <tree string="Number Unit Tree">
+                   <field name="name"/>
+                   <field name="id"/>
+               </tree>
+           </field>
+       </record>
+        <record id="id_employee_number_unit_form" model="ir.ui.view">
+            <field name="name">employee number unit form</field>
+            <field name="model">number.unit</field>
+            <field name="arch" type="xml">
+                <form string="Number Unit Form">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                            </group>
+                            <group>
+                                <field name="id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="id_employee_number_unit_search" model="ir.ui.view">
+           <field name="name">employee number unit search</field>
+           <field name="model">number.unit</field>
+            <field name="arch" type="xml">
+                <search string="Number Unit Search">
+              <field name="name"/>
+              <field name="id"/>
+            </search>
+           </field>
+        </record>
+        <record id="id_employee_number_unit_action" model="ir.actions.act_window">
+            <field name="name">Employee Number Unit</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">number.unit</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+              <p class="oe_view_nocontent_create">
+                <!-- Add Text Here -->
+              </p><p>
+                <!-- More details about what a user can do with this object will be OK -->
+              </p>
+            </field>
+        </record>
+        <menuitem id="id_employee_number_unit_menu" name="Employee Number Unit" parent="hr.menu_hr_employee_payroll" action="id_employee_number_unit_action" sequence="10"/>
+    </data>
+</odoo>

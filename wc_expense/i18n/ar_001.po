@@ -1,0 +1,223 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* wc_expense
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-07 13:58+0000\n"
+"PO-Revision-Date: 2022-01-07 13:58+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.hr_expense_actions_my_unsubmitted
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_my_expenses_to_submit
+msgid "My Expenses to Report"
+msgstr "مصاريفي للإبلاغ بها"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.hr_expense_actions_my_all
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_my_expenses_all
+msgid "All My Expenses"
+msgstr "مصاريفي"
+
+#. module: hr_expense
+#: model:ir.model.fields,field_description:hr_expense.field_hr_expense_sheet__amount_residual
+msgid "Amount Due"
+msgstr "المبلغ المستحق"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:hr_expense.action_hr_expense_sheet_all
+#: model:ir.ui.menu,name:hr_expense.menu_hr_expense_sheet_all
+msgid "All Reports"
+msgstr "كل الفواتير"
+
+#. module: hr_expense
+#: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_view_form
+msgid "Attach Receipt"
+msgstr "ارفاق الفاتورة"
+
+
+#. module: wc_expense
+#: model_terms:ir.ui.view,arch_db:wc_expense.journal_entry_template_report_view_inherit11
+msgid "<strong>Expense Approval Manager :</strong>"
+msgstr ""
+
+#. module: wc_expense
+#: model_terms:ir.ui.view,arch_db:wc_expense.journal_entry_template_report_view_inherit11
+msgid "<strong>Expense Creator :</strong>"
+msgstr ""
+
+#. module: wc_expense
+#: model_terms:ir.ui.view,arch_db:wc_expense.journal_entry_template_report_view_inherit11
+msgid "<strong>Expense Revision Manager :</strong>"
+msgstr ""
+
+#. module: wc_expense
+#: model_terms:ir.ui.view,arch_db:wc_expense.journal_entry_template_report_view_inherit11
+msgid "<strong>Payment Approval :</strong>"
+msgstr ""
+
+#. module: wc_expense
+#: model_terms:ir.ui.view,arch_db:wc_expense.journal_entry_template_report_view_inherit11
+msgid "<strong>Payment Creator :</strong>"
+msgstr ""
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_account_bank_statement_line__payment_id
+#: model:ir.model.fields,field_description:wc_expense.field_account_move__payment_id
+#: model:ir.model.fields,field_description:wc_expense.field_account_payment__payment_id
+msgid "Account Payment"
+msgstr "حساب الدفع"
+
+#. module: wc_expense
+#: model_terms:ir.ui.view,arch_db:wc_expense.view_inherit_view_hr_expense_sheet_form
+msgid "Approve"
+msgstr "موافقة"
+
+#. module: wc_expense
+#: model_terms:ir.ui.view,arch_db:wc_expense.view_inherit_view_hr_expense_sheet_form
+msgid "Create Journal Entry"
+msgstr "انشاء قيد"
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_account_move__display_name
+#: model:ir.model.fields,field_description:wc_expense.field_account_payment__display_name
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense__display_name
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense_sheet__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: wc_expense
+#: model:res.groups,name:wc_expense.group_edit_users_managers
+msgid "Edit User and Manager Fields"
+msgstr "تعديل المستخدم والمدير"
+
+#. module: wc_expense
+#: model:ir.model,name:wc_expense.model_hr_expense
+msgid "Expense"
+msgstr "المصروف"
+
+#. module: wc_expense
+#: model:ir.model,name:wc_expense.model_hr_expense_sheet
+msgid "Expense Report"
+msgstr "تقرير المصروف"
+
+#. module: wc_expense
+#: model:ir.model.fields,help:wc_expense.field_hr_expense_sheet__state
+msgid "Expense Report State"
+msgstr "حالة تقرير المصروف"
+
+#. module: wc_expense
+#: model:res.groups,name:wc_expense.group_revision_expense_manager
+msgid "Expense Revision Managers"
+msgstr "مديرو مراجعة النفقات"
+
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_account_bank_statement_line__expense_sheet_id
+#: model:ir.model.fields,field_description:wc_expense.field_account_move__expense_sheet_id
+#: model:ir.model.fields,field_description:wc_expense.field_account_payment__expense_sheet_id
+msgid "Expense Sheet"
+msgstr "ورقة المصاريف"
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_account_move__id
+#: model:ir.model.fields,field_description:wc_expense.field_account_payment__id
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense__id
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense_sheet__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense_sheet__is_expense_manager
+msgid "Is Expense Manager"
+msgstr "مدير المصروفات؟"
+
+#. module: wc_expense
+#: model:ir.model,name:wc_expense.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_account_move____last_update
+#: model:ir.model.fields,field_description:wc_expense.field_account_payment____last_update
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense____last_update
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense_sheet____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense_sheet__manager_revision_id
+#: model:ir.model.fields.selection,name:wc_expense.selection__hr_expense_sheet__state__manager_revision
+#: model_terms:ir.ui.view,arch_db:wc_expense.view_inherit_view_hr_expense_sheet_form
+msgid "Manager Revision"
+msgstr "مراجعة المدير"
+
+#. module: wc_expense
+#: code:addons/wc_expense/models/expense_sheet.py:0
+#, python-format
+msgid "Only Managers and HR Officers can approve expenses"
+msgstr ""
+
+#. module: wc_expense
+#: model:ir.model,name:wc_expense.model_account_payment
+msgid "Payments"
+msgstr "المدفوعات"
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_hr_expense_sheet__state
+msgid "Status"
+msgstr "الحالة"
+
+#. module: wc_expense
+#: code:addons/wc_expense/models/expense_sheet.py:0
+#, python-format
+msgid "The expense reports were successfully approved."
+msgstr "تم الموفقة علي تقرير المصروفات"
+
+#. module: wc_expense
+#: code:addons/wc_expense/models/expense_sheet.py:0
+#, python-format
+msgid "There are no expense reports to approve."
+msgstr ""
+
+#. module: wc_expense
+#: model:ir.model.fields,field_description:wc_expense.field_account_payment__user_confirmed
+msgid "User Confirmed"
+msgstr "موافقة المستخدم"
+
+#. module: wc_expense
+#: code:addons/wc_expense/models/expense_sheet.py:0
+#, python-format
+msgid "You can only approve your department expenses"
+msgstr ""
+
+#. module: wc_expense
+#: model_terms:ir.ui.view,arch_db:wc_expense.hr_expense_sheet_view_search_inherit
+msgid "My Custody"
+msgstr "عهدتي"
+
+#. module: hr_expense
+#: model:ir.actions.act_window,name:wc_expense.action_hr_expense_sheet_my_all
+#: model:ir.ui.menu,name:wc_expense.menu_hr_expense_sheet_my_reports
+#: model_terms:ir.ui.view,arch_db:wc_expense.hr_expense_sheet_view_search
+msgid "My Reports"
+msgstr "عهدتي"
+
+#. module: hr_expense
+#: model_terms:ir.ui.view,arch_db:hr_expense.hr_expense_view_search
+msgid "To Report"
+msgstr "للإبلاغ"
+
+#. module: wc_expense
+#: code:addons/wc_expense/models/expense_sheet.py:0
+#, python-format
+msgid "You cannot approve your own expenses"
+msgstr "لا تستطيع الموافقة علي عهدتك"
