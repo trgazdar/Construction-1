@@ -174,6 +174,16 @@ class OwnerContract(models.Model):
             res.work_plan_id = False
             for rec in self.env['work.plan'].search([('project_id', '=', res.project_id.id)], limit=1):
                 res.work_plan_id = rec.id
+            lines_ids=[]
+            if res.type =='contractor':
+                for line in res.project_id.project_tender_ids:
+                    lines_ids.append((0,0,{
+                        "product_id":line.related_product.id,
+                        "product_uom_id":line.uom_id.id,
+                        "quantity":line.tender_qty,
+                    }))
+                res.contract_line_ids=False
+                res.contract_line_ids=lines_ids
 
     @api.model
     def create(self, vals):
@@ -386,14 +396,18 @@ class OwnerContractLine(models.Model):
                             lambda m: m.product_id.id == rec.product_id.id and m.work_plan_items_id != False).mapped('work_plan_items_id'))
                 plan_items_ids = [x.id for x in plan_items]
             return {'domain': {'plan_category_id': [('id', 'in', plan_items_ids)]}}
+
+
     @api.onchange('plan_category_id')
     def git_qty_plan_category_id(self):
         for rec in self:
             if rec.plan_category_id:
-                rec.quantity=rec.plan_category_id.work_plan_line_items_ids.filtered(
+                quantity=rec.plan_category_id.work_plan_line_items_ids.filtered(
                             lambda m: m.product_id.id == rec.product_id.id)[0].quantity
 
-    @api.onchange('product_id')
+                rec.quantity=quantity-sum(list(self.search([("plan_category_id",'=',rec.plan_category_id.id)]).mapped('quantity')))
+
+    @api.onchange('product_id','plan_category_id')
     def get_domins_plane_item(self):
         for rec in self:
             plan_items_ids=[]
@@ -402,15 +416,19 @@ class OwnerContractLine(models.Model):
                 plan_items=list(rec.owner_contract_id.work_plan_id.work_plan_line_ids.filtered(
                             lambda m: m.product_id.id == rec.product_id.id and m.plan_items_id != False).mapped('plan_items_id'))
                 plan_items_ids=[x.id for x in plan_items]
-                print('plan_items_ids',plan_items_ids)
+            if rec.plan_category_id:
+                plan_items=self.env['work.plan.items'].search([("project_id",'=',rec.owner_contract_id.project_id.id),("category_id",'=',rec.plan_category_id.id,)])
+                plan_items_ids = [x.id for x in plan_items]
             return {'domain': {'plan_item_id': [('id', 'in', plan_items_ids)]}}
 
     @api.onchange('plan_item_id')
     def git_qty_plan_plan_item_id(self):
         for rec in self:
             if rec.plan_item_id:
-                rec.quantity = rec.plan_item_id.work_plan_line_ids.filtered(
+                quantity = rec.plan_item_id.work_plan_line_ids.filtered(
                     lambda m: m.product_id.id == rec.product_id.id)[0].quantity
+                rec.quantity=quantity-sum(list(self.search([("plan_item_id",'=',rec.plan_item_id.id)]).mapped('quantity')))
+
 
     @api.onchange('product_id', 'work_plan_item_id')
     def get_product_data(self):

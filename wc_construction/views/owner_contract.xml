@@ -133,8 +133,8 @@
                                             <field name="update_product" invisible="1"/>
                                             <field name="product_id" string="Work Item"/>
                                             <field name="description" invisible="1"/>
-                                            <field name="plan_item_id"  attrs="{'readonly': [('plan_category_id','!=',False)]}"/>
-                                            <field name="plan_category_id" attrs="{'readonly': [('plan_item_id','!=',False)]}" />
+                                            <field name="plan_category_id" />
+                                            <field name="plan_item_id"  />
 <!--                                            <field name="work_plan_item_id"-->
 <!--                                                   attrs="{'column_invisible': [('parent.type','=','contractor')]}"/>-->
                                             <field name="quantity"/>
