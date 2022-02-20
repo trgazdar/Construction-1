@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <report
+                id="print_report_analytic_account"
+                model="analytic.report.wizard"
+                report_type="qweb-pdf"
+                string="Analytic Report"
+                name="janobi_analytic_report.analytic_report"
+                file="janobi_analytic_report.analytic_report"
+        />
+
+
+     <template id="analytic_report">
+        <t t-call="web.html_container">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div class="oe_structure"/>
+                        <div>
+                            <h2 style="text-align:center">Analytic Account Report</h2>
+                            <table class="table table-borderless"  style="border: 1px solid;">
+                                        <tr>
+                                              <td style="border:solid 1px; border-collapse: collapse;" colspan="2" align="left" >Analytic Account:
+                                                  <strong t-field="analytic.name"/>
+
+                                              </td>
+                                             <td>
+                                                 <t t-esc="total_amount"/>
+                                             </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="border:solid 1px; border-collapse: collapse;" align="center">Product</td>
+                                            <td style="border:solid 1px; border-collapse: collapse;" align="center">Quantity</td>
+                                            <td style="border:solid 1px; border-collapse: collapse;" align="center">Total</td>
+                                        </tr>
+                                        <t t-foreach="lines" t-as="line">
+                                               <tr>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <t t-esc="line['product_name']"/>
+                                                   </td>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <t t-esc="line['qty_done']"/>
+                                                   </td>
+                                                   <td style="border:solid 1px; border-collapse: collapse;" align="center">
+                                                       <t t-esc="line['total_amount_product']"/>
+                                                   </td>
+                                               </tr>
+                                        </t>
+                                </table>
+                        </div>
+
+                    </div>
+                </t>
+        </t>
+     </template>
+    </data>
+</odoo>

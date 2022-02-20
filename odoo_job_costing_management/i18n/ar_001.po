@@ -1,0 +1,2416 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* odoo_job_costing_management
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 09:34+0000\n"
+"PO-Revision-Date: 2022-01-11 09:34+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__stock_moves_count
+msgid "# of Stock Moves"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_const_project_note_note_kanban
+msgid "<i class=\"fa fa-check\" title=\"Check\"/>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_project_kanaban_inherit
+msgid "<i class=\"fa fa-ellipsis-v\" role=\"img\" aria-label=\"Manage\" title=\"Manage\"/>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_project_kanaban_inherit
+msgid ""
+"<i class=\"fa fa-envelope\" role=\"img\" aria-label=\"Domain Alias\" "
+"title=\"Domain Alias\"/>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_project_kanaban_inherit
+msgid ""
+"<i class=\"fa fa-smile-o\" role=\"img\" aria-label=\"Percentage of "
+"satisfaction\" title=\"Percentage of satisfaction\"/>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_const_project_note_note_kanban
+msgid "<i class=\"fa fa-undo\" title=\"Undo\"/>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_project_kanaban_inherit
+msgid "<span class=\"o_label\">Profitability</span>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid ""
+"<span>Initially Planned Hours :</span><br/>\n"
+"                                     <span>Effective Hours :</span><br/>\n"
+"                                     <span>Remaining Hours :</span><br/>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Analytic Account </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Breakdown Cost</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>CLIENT MANAGER</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>CLIENT NAME</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Closed Date </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Company </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.purchase_requisition_inherit_project
+msgid "<strong>Construction Project</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+msgid "<strong>Construction Site Detail:</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Create Date </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Created By </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Currency </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Customer </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+msgid "<strong>Customer</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>DATE:</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Description </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>EMAIL ID</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>EMPLOYEE NAME</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>ENTRY DATE</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>HAND OVER DATE</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Issue </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>JOB ORDER NO</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Job Order </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>KEY PERSONNEL</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>Location</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>MOBILE</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>NAME:</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Name </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>PO DATE</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>PO NUMBER</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>POSITION</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>PROJECT DETAILS</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>PROJECT ID</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>PROJECT NAME</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Project </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>Project Info.</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+msgid "<strong>Project Manager</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.note_report_id
+msgid "<strong>Project</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>REMARKS</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.note_report_id
+msgid "<strong>Respnosible User</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>SIGNATURE:</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>SO Number </strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "<strong>START DATE</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.purchase_requisition_inherit_project
+msgid "<strong>Task / Job Order User</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.purchase_requisition_inherit_project
+msgid "<strong>Task / Job Order</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.note_report_id
+msgid "<strong>Task</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+msgid "<strong>Tasks:</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Total Labour Cost</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Total Material Cost</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "<strong>Total Overhead Cost</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+msgid "<strong>Types of Construction</strong>"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__access_warning
+msgid "Access warning"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Account"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__account_invoice_line_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__account_invoice_line_ids
+msgid "Account Invoice Line"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__account_invoice_line_count
+msgid "Account Invoice Line Count"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+msgid "Active"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_ids
+msgid "Activities"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_exception_decoration
+msgid "Activity Exception Decoration"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_state
+msgid "Activity State"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_type_icon
+msgid "Activity Type Icon"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Actual Invoice Quantity"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__actual_quantity
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Actual Purchased Quantity"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__actual_hour
+msgid "Actual Timesheet Hours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Actual Timesheet hours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__actual_transfer_qty
+msgid "Actual Transferred QTY"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__actual_invoice_quantity
+msgid "Actual Vendor Bill Quantity"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_equipment_form
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_labour_form
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_products_form
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_subcontractor_form
+msgid "Add"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_project__type_of_construction__agricultural
+msgid "Agricultural"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__analytic_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__analytic_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Analytic Account"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_account_analytic_line
+msgid "Analytic Line"
+msgstr "البند التحليلي"
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Applied Overhead"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.server,name:odoo_job_costing_management.action_job_costing_approve_multi
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Approve"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_costing__state__approve
+msgid "Approved"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+msgid "Approved Job Costing"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+msgid "Archive"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Assigned To"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Assigning Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_ir_attachment
+msgid "Attachment"
+msgstr "مرفق"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_product__boq_type
+msgid "BOQ Type"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__basis
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Basis"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__jobcost_total
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__job_cost_total
+msgid "Breakdown Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+msgid "By sticky note Category"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "CLIENT STAMP AND SIGNATURE"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_task__state__cancel
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_equipment_form
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_labour_form
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_products_form
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_subcontractor_form
+msgid "Cancel"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+msgid "Cancel Job Costing"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_costing__state__cancel
+msgid "Canceled"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__child_task_ids
+msgid "Child Tasks"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.actions.act_window,help:odoo_job_costing_management.action_picking_tree_all_const
+msgid "Click here to create a new transfer."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.actions.act_window,help:odoo_job_costing_management.action_partner_contractor_form
+msgid "Click to add a contact in your address book."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__client_manager
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__client_manager
+msgid "Client Manager"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__client_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__client_name
+msgid "Client Name"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__complete_date
+msgid "Closed Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__code
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__code
+msgid "Code"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_project__type_of_construction__commercial
+msgid "Commercial"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__company_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+msgid "Company"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_cost_configuration
+msgid "Configuration"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Confirm"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+msgid "Confirm Job Costing"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_costing__state__confirm
+msgid "Confirmed"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_managmt
+msgid "Construction"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__project_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_note_note__project_id
+msgid "Construction Project"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_inherit_construction
+msgid "Construction Site Detail"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__consumed_task_material_id
+msgid "Consumed Material Plan Task"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__consumed_material_ids
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Consumed Materials"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_res_partner
+msgid "Contact"
+msgstr "جهة الاتصال"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__contract_date
+msgid "Contract Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_partner_contractor_form
+msgid "Contractors"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__cost_price
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Cost / Unit"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__total_cost
+msgid "Cost Price Sub Total"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.proejct_subtask_user_form_view
+msgid "Create"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__start_date
+msgid "Create Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_task_form2_inherit_subtask
+msgid "Create Subtasks"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.actions.act_window,help:odoo_job_costing_management.open_view_project_job_all_config
+msgid "Create a new Construction project."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__user_id
+msgid "Created By"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_user_subtask__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_equipment__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_labour__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_subcontractor__create_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_user_subtask__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_equipment__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_labour__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_subcontractor__create_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__currency_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__currency_id
+msgid "Currency"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__partner_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Customer"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__access_url
+msgid "Customer Portal URL"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_ir_attachment__attach_document
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_mrp_document__attach_document
+msgid "DOC"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__lump_sum_qty
+msgid "DWG"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__date
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Deadline"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_const_project_note_note_kanban
+msgid "Delete"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__description
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__description
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__description
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__description
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Description"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Destination Location Zone"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Direct Labour"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__equipment_line_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__job_cost_line_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__job_labour_line_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__job_overhead_line_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__other_line_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__subcontractor_line_ids
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Direct Materials"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Discount"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__discount
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__discount
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_inherit_construction
+msgid "Discount %"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_analytic_line__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_crm_team__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_hr_employee__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_ir_attachment__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_maintenance_equipment__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_note_note__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_product__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_template__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task_type__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_user_subtask__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_res_partner__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_equipment__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_labour__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_subcontractor__display_name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_costing__state__done
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Done"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+msgid "Done Job Costing"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_costing__state__draft
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_task__state__draft
+msgid "Draft"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Duration"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_order
+msgid "EDC STAMP AND SIGNATURE"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_project_kanaban_inherit
+msgid "Edit"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__email_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__email_id
+msgid "Email ID"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_hr_employee
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__employee_id
+msgid "Employee"
+msgstr "الموظف"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__employee_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__employee_id
+msgid "Employee Name"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__date_end
+msgid "End Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_analytic_line__end_time
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "End Time"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__entry_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__entry_date
+msgid "Entry Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_project__type_of_construction__environmental
+msgid "Environmental"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_equipment__equipment_line_ids
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_cost_line__job_type__equipment
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_type__job_type__equipment
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_template__job_type__equipment
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_equipment_form
+msgid "Equipment"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__equipment_machine_total
+msgid "Equipment / Machinery Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Equipments"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__customer_cost
+msgid "Final Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products__flag_type
+msgid "Flag Type"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__activity_type_icon
+msgid "Font awesome icon e.g. fa-tasks"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+msgid "Group By"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "HR Timesheet Lines"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__hand_over_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__hand_over_date
+msgid "Hand Over Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_project__type_of_construction__heavy_civil
+msgid "Heavy civil"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__hours
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Hours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_analytic_line__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_move_line__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_crm_team__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_hr_employee__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_ir_attachment__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_maintenance_equipment__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_note_note__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_product__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_template__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task_type__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_user_subtask__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_res_partner__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_equipment__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_labour__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_subcontractor__id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_exception_icon
+msgid "Icon"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__activity_exception_icon
+msgid "Icon to indicate an exception activity."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__message_needaction
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__message_has_error
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_task__state__in_hand
+msgid "In Hand"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_project__type_of_construction__industrial
+msgid "Industrial"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_project__type_of_construction__institutional
+msgid "Institutional"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Intially Planned Hours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_note_note__is_task
+msgid "Is Job Order?"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_note_note__is_project
+msgid "Is Project?"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_crm_team__is_tender
+msgid "Is Tender"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_cost_project_form_view
+msgid "JOB ORDER REPORT DATA"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_maintenance_equipment__job_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_res_partner__job_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_res_users__job_id
+msgid "Job"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__job_cost_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__job_cost_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__job_cost_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Job Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_analytic_line__job_cost_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_move_line__job_cost_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order_line__job_cost_id
+msgid "Job Cost Center"
+msgstr "مركز التكلفة"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__job_cost_count
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__job_cost_count
+msgid "Job Cost Count"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_analytic_line__job_cost_description
+msgid "Job Cost Description"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__notes_job
+msgid "Job Cost Details"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_hr_employee__job_cost_id_employee
+msgid "Job Cost Id Employee"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_analytic_line__job_cost_line_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_move_line__job_cost_line_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order_line__job_cost_line_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Job Cost Line"
+msgstr " تكلفة العمل"
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_job_costing
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_sub_job_costing
+msgid "Job Cost Sheets"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.report,name:odoo_job_costing_management.job_costing_report
+#: model:ir.model,name:odoo_job_costing_management.model_job_costing
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__direct_id
+msgid "Job Costing"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.module.category,name:odoo_job_costing_management.module_category_construction
+msgid "Job Costing Contracting Managements"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Job Costing form"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_cost_managmt
+msgid "Job Costs"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.notes_job_cost_task_menu
+msgid "Job Notes"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__job_number
+msgid "Job Number"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__task_id
+msgid "Job Order"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__job_order_no
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__job_order_no
+msgid "Job Order No"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_task_form2_inherit_subtask
+msgid "Job Order Report Data"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_view_job_orders
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_cost_order
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_cost_orders
+msgid "Job Orders"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_job_type
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__job_type_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_product__job_type
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_template__job_type
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Job Type"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_type_form_view
+msgid "Job Type form"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_type
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_type_tree_view
+msgid "Job Types"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_cost_project_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_cost_task_form_view
+msgid "Jobcosts"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_account_move_line
+msgid "Journal Item"
+msgstr "عنصر اليومية"
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_cost_project_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_task_form2_inherit_subtask
+msgid "KEY PERSONNEL"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__key_personnel_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__key_personnel_ids
+msgid "Key Personnel"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_labour__labour_ids
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_cost_line__job_type__labour
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_type__job_type__labour
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_template__job_type__labour
+msgid "Labour"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Labours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_analytic_line____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_move_line____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_crm_team____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_hr_employee____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_ir_attachment____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_maintenance_equipment____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_note_note____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_product____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_product_template____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task_type____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_user_subtask____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_res_partner____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_equipment____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_labour____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_subcontractor____last_update
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_user_subtask__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_equipment__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_labour__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_subcontractor__write_uid
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_user_subtask__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_equipment__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_labour__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_subcontractor__write_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__location
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__location_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__location
+msgid "Location"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__lump_sum_project
+msgid "LumpSum"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_product__boq_type__eqp_machine
+msgid "Machinery / Equipment"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__maintenance_id
+msgid "Maintenance"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_maintenance_equipment
+msgid "Maintenance Equipment"
+msgstr "معدات الصيانة"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_cost_line__job_type__material
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_type__job_type__material
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_template__job_type__material
+msgid "Material"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__material_task_id
+msgid "Material Plan Task"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__material_plan_ids
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Material Plannings"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_task_form2_inherit_picking
+msgid "Material Requisitions"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_picking_tree_all_const
+msgid "Material Requisitions / BOQ"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_material_purchase_requisition_job_costing
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_cost_mat_req
+msgid "Material Requisitions/ BOQ"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Material Requistions"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_cost_material
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Materials"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_materials
+msgid "Materials / BOQ "
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.material_purchase_requisition_form_view_inherit_materials
+msgid "Materials / BOQ Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__mobile
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__mobile
+msgid "Mobile"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__move_ids
+msgid "Move"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__my_activity_date_deadline
+msgid "My Activity Deadline"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__name
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__name
+msgid "Name"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_date_deadline
+msgid "Next Activity Deadline"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_summary
+msgid "Next Activity Summary"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_type_id
+msgid "Next Activity Type"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_note_note
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_form
+msgid "Note"
+msgstr "الملاحظات"
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_project_note_note
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_task_note_note
+#: model:ir.actions.report,name:odoo_job_costing_management.print_note_report
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__notes_count
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__notes_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__notes_count
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__notes_ids
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_inherit_construction
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_task_form2_inherit_picking
+msgid "Notes"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__number
+msgid "Number"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.actions.act_window,help:odoo_job_costing_management.action_partner_contractor_form
+msgid ""
+"Odoo helps you easily track all activities related to\n"
+"                a supplier: discussions, history of purchases,\n"
+"                documents, etc."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.actions.act_window,help:odoo_job_costing_management.action_view_job_orders
+msgid ""
+"Odoo's Job Orders management allows you to manage the pipeline of your Jobs efficiently. You can track\n"
+"                progress, discuss on jobs, attach documents, etc."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.actions.act_window,help:odoo_job_costing_management.action_view_task_subtask
+msgid ""
+"Odoo's project management allows you to manage the pipeline of your tasks efficiently. You can track\n"
+"                progress, discuss on tasks, attach documents, etc."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Order"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Order Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.actions.act_window,help:odoo_job_costing_management.open_view_project_job_all_config
+msgid ""
+"Organize your activities (plan tasks, track issues, invoice timesheets) for internal, personal or\n"
+"                    customer construction projects."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_cost_line__job_type__other
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_type__job_type__other
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_template__job_type__other
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Other"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__profit_per
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__project_profit
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_inherit_construction
+msgid "Over head & Profit %"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_cost_line__job_type__overhead
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_type__job_type__overhead
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_template__job_type__overhead
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Overhead"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__po_number
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__po_number
+msgid "PO Number"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_ir_attachment__attach_schedule
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_mrp_document__attach_schedule
+msgid "POQ"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__parent_task_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_task_search_form_inherit_parenttask
+msgid "Parent Task"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_project_kanaban_inherit
+msgid "Percentage of happy ratings over the past 30 days."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__planned_hours
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+msgid "Planned Hours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__product_qty
+msgid "Planned Qty"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__po_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__po_date
+msgid "Po Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__access_url
+msgid "Portal Access URL"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__position_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__position_id
+msgid "Position"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.proejct_subtask_user_form_view
+msgid "Prject Subtask"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_product_product
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__product_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__product_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__product_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__related_product
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Product"
+msgstr "المنتج"
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_product_template
+msgid "Product Template"
+msgstr "قالب المنتج"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_products__product_ids
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_products_form
+msgid "Products"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.proejct_subtask_user_form_view
+msgid "Proejct Subtask"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_project_project
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__project_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel__project_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__project_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+msgid "Project"
+msgstr "المشروع"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__project_ID
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__project_ID
+msgid "Project ID"
+msgstr "معرف المشروع"
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.report,name:odoo_job_costing_management.job_order_report
+msgid "Project Info."
+msgstr "معلومات المشروع"
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.notes_job_project_menu
+msgid "Project Notes"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.report,name:odoo_job_costing_management.project_report
+msgid "Project Report"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_user_subtask__subtask_user_ids
+msgid "Project Subtask User"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__project_tender_ids
+#: model:ir.ui.menu,name:odoo_job_costing_management.project_tender_project_menu
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_inherit_construction
+msgid "Project Tender"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_proejct_subtask_user_wizard
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__subtask_id
+msgid "Project User Subtask"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.open_view_project_job_all_config
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_cost_project
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_job_projects
+msgid "Projects"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_purchase_order
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__purchase_order_id
+msgid "Purchase Order"
+msgstr "أمر شراء"
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_purchase_order_line
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__purchase_order_line_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__purchase_order_line_ids
+msgid "Purchase Order Line"
+msgstr "بند أمر الشراء"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__purchase_order_line_count
+msgid "Purchase Order Line Count"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Purchase Order Lines"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__purchase_order_ids
+msgid "Purchase Orders"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_material_purchase_requisition
+msgid "Purchase Requisition"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "QTY Per Line"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__qty_per_line
+msgid "Qty"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__product_uom_qty
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__product_uom_qty
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Quantity"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__reference
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Reference"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_task__state__refused
+msgid "Refused"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__related_task_id
+msgid "Related Job order"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Remaining Hours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__remarks
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__remarks
+msgid "Remarks"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Requisition Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Requisition Type"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Reset to Draft"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_project__type_of_construction__residential
+msgid "Residential"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__activity_user_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_form
+msgid "Responsible User"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__so_number
+msgid "Sale Reference"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_crm_team
+msgid "Sales Team"
+msgstr "فريق المبيعات"
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+msgid "Search Job Coasting"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__access_token
+msgid "Security Token"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.act_open_select_equipment_view
+#: model:ir.model,name:odoo_job_costing_management.model_select_equipment
+msgid "Select Equipment"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Select Equipments"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.act_open_select_labour_view
+#: model:ir.model,name:odoo_job_costing_management.model_select_labour
+msgid "Select Labour"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Select Materials"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Select Other"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Select Overhead"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.act_open_select_products_view
+#: model:ir.model,name:odoo_job_costing_management.model_select_products
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_products_form
+msgid "Select Products"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.act_open_select_subcontractor_view
+#: model:ir.model,name:odoo_job_costing_management.model_select_subcontractor
+msgid "Select Subcontractor"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Select Subcontractors"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_equipment_form
+msgid "Select equipment"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_labour_form
+msgid "Select labour"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Select labours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_subcontractor_form
+msgid "Select subcontractor"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_project_kanaban_inherit
+msgid "Send an email"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Setup default Job Details or Technical contents."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_project_kanaban_inherit
+msgid "Share"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task_type__show_in_kanban
+msgid "Show In Kanban"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Signature:____________________"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+msgid "Spent Hours"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+msgid "Stage"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_stages
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_tree
+msgid "Stages"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__start_date
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__date_start
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__start_date
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+msgid "Start Date"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_account_analytic_line__start_time
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Start Time"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__state
+msgid "State"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__state
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Status"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__activity_state
+msgid ""
+"Status based on activities\n"
+"Overdue: Due date is already passed\n"
+"Today: Activity date is today\n"
+"Planned: Future activities."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_project_task__state
+msgid "Status of the Tender"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_purchase_order__picking_id
+msgid "Stock Picking"
+msgstr "المخزن"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__picking_ids
+msgid "Stock Pickings"
+msgstr "المخازن"
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Stocks"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.menu_item_contractors
+msgid "Sub Contractors"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.ui.menu,name:odoo_job_costing_management.job_cost_sub_contractors
+msgid "Sub Contractors "
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_product__boq_type__subcontract
+msgid "Subcontract"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__subcontract_total
+msgid "Subcontract Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_select_subcontractor__sub_contractors
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_cost_line__job_type__subcontractor
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__job_type__job_type__subcontractor
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_template__job_type__subcontractor
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_subcontractor_form
+msgid "Subcontractor"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Subtasks"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.note_report_id
+msgid "Tag Notes :"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_form
+msgid "Tags"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_project_task
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_key_personnel_task__task_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__task_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_project_note_note_filter
+msgid "Task"
+msgstr "المهمة"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__task_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_note_note__task_id
+msgid "Task / Job Order"
+msgstr "مهمه/طلب عمل"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__task_user_id
+msgid "Task / Job Order User"
+msgstr ""
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order__date_planned
+msgid "Receipt Date"
+msgstr "تاريخ استلام"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__description
+msgid "Task Description"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__name
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.project_report_id
+msgid "Task Name"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.report,name:odoo_job_costing_management.task_report
+msgid "Task Report"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_project_task_type
+msgid "Task Stage"
+msgstr "مرحلة المهمة"
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Task Title"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_view_task_subtask
+msgid "Tasks"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__assigned_to
+msgid "Tasks Assigned To"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_crm_team__has_team_tender
+msgid "Team Tender"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.actions.act_window,name:odoo_job_costing_management.action_project_tender
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__tender_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_task__tender_id
+msgid "Tender"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__tender_qty
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__tender_qty
+msgid "Tender Qty"
+msgstr "الكمية المعطاه"
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__tender_rate
+msgid "Tender Rate"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:res.groups,name:odoo_job_costing_management.group_project_tender_user
+msgid "Tender User"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Timesheet"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__timesheet_line_ids
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__timesheet_line_ids
+msgid "Timesheet Line"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__timesheet_line_count
+msgid "Timesheet Line Count"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Timesheet Lines"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_inherit_construction
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Total"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__total_amount
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Total Amount"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__total_amount_unit_before_discount
+msgid "Total Before Discount"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__equipment_total
+msgid "Total Equipment"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__labor_total
+msgid "Total Labour Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__material_total
+msgid "Total Material Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__other_total
+msgid "Total Other"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__overhead_total
+msgid "Total Overhead Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Total Planned QTY"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__subcontractor_total
+msgid "Total SubContractor"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__job_type
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_type__job_type
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__item_type
+msgid "Type"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__activity_exception_decoration
+msgid "Type of the exception activity on record."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_project__type_of_construction
+msgid "Types of Construction"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__total_amount_unit
+msgid "Unit Final"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Unit Price"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_consumed_material__product_uom
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_plan__product_uom
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "Unit of Measure"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_cost_line__uom_id
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__uom_id
+msgid "Uom"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_inherit_construction
+msgid "Update Tender Discount"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.edit_project_inherit_construction
+msgid "Update Tender Profit"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_user_subtask__user_id
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_search
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.task_report_id
+msgid "User"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Vendor"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.job_costing_form_view
+msgid "Vendor Invoice Lines"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.report_job_costing
+msgid "Vendors Invoice Lines"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_job_costing__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,help:odoo_job_costing_management.field_job_costing__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__work_cost_package_total
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_product__boq_type__work_cost_package
+msgid "Work Cost Package"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_project_tender__name
+msgid "Work Item"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__product_product__boq_type__worker_resource
+msgid "Worker / Resource"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields,field_description:odoo_job_costing_management.field_material_purchase_requisition__worker_resource_total
+msgid "Worker / Resource Cost"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.actions.act_window,help:odoo_job_costing_management.action_picking_tree_all_const
+msgid ""
+"You can either do it immediately or mark it as Todo for future processing. Use your scanner to validate\n"
+"                the transferred quantity quicker."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: code:addons/odoo_job_costing_management/models/job_costing.py:0
+#, python-format
+msgid "You can not delete Job Cost Sheet which is not draft or cancelled."
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.proejct_subtask_user_form_view
+msgid "_Cancel"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_consumed_material
+msgid "consumed.material"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: code:addons/odoo_job_costing_management/models/job_costing.py:0
+#, python-format
+msgid "draft"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_job_cost_line
+msgid "job.cost.line"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_job_type
+msgid "job.type"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_const_project_note_note_kanban
+msgid "kanban_img1"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_key_personnel
+msgid "key.personnel"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_key_personnel_task
+msgid "key.personnel.task"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model_terms:ir.ui.view,arch_db:odoo_job_costing_management.view_select_labour_form
+msgid "labour"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_material_plan
+msgid "material.plan"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_project__type_of_construction__other
+msgid "other"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_project_tender
+msgid "project.tender"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_project_user_subtask
+msgid "project.user.subtask"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_tender__item_type__transaction
+msgid "transaction"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model,name:odoo_job_costing_management.model_user_subtask
+msgid "user.subtask"
+msgstr ""
+
+#. module: odoo_job_costing_management
+#: model:ir.model.fields.selection,name:odoo_job_costing_management.selection__project_tender__item_type__view
+msgid "view"
+msgstr ""

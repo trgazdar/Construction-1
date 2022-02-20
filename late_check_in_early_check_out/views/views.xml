@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="id_hr_employee_inherit_form" model="ir.ui.view">
+            <field name="name">hr employee inherit form</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='hr_settings']" position="after">
+                    <page string="Employee Shifts" name="Shifts">
+                        <field name="shift_name_ids">
+                            <tree editable="bottom">
+                                <field name="hour_from" widget="float_time" required="1"/>
+                                <field name="hour_to" widget="float_time" required="1"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+        <record id="view_attendance_tree_added_fields" model="ir.ui.view">
+            <field name="name">view.attendance.tree.added.fields</field>
+            <field name="model">hr.attendance</field>
+            <field name="inherit_id" ref="hr_attendance.view_attendance_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='worked_hours']" position="after">
+                    <field name="late" widget="float_time" force_save="1"/>
+                    <field name="penalties_1"/>
+                    <field name="penalties_2"/>
+                    <field name="over_time" widget="float_time" force_save="1"/>
+                    <field name="early_sign_in" widget="float_time" force_save="1"/>
+                    <field name="early_leave" widget="float_time" force_save="1"/>
+                </xpath>
+                <xpath expr="//field[@name='check_out']" position="after">
+                    <field name="hour_from" widget="float_time" force_save="1"/>
+                    <field name="hour_to" widget="float_time" force_save="1"/>
+                </xpath>
+            </field>
+        </record>
+        <record id="id_ir_cron_check_challenge" model="ir.cron">
+            <field name="name">Meshmesh</field>
+            <field name="model_id" ref="hr_attendance.model_hr_attendance"/>
+            <field name="state">code</field>
+            <field name="code">model.check_attendance()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field eval="False" name="doall"/>
+        </record>
+        <record id="id_hr_payslip_inheri_form" model="ir.ui.view">
+            <field name="name">hr_payslip_inherit</field>
+            <field name="model">hr.payslip</field>
+            <field name="inherit_id" ref="hr_payroll.view_hr_payslip_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="Attendance" name="attendance">
+                        <field name="hr_attend_ids">
+                            <tree edit="false" create="false">
+                                <field name="employee_id"/>
+                                <field name="check_in"/>
+                                <field name="check_out"/>
+                                <field name="hour_from" widget="float_time"/>
+                                <field name="hour_to" widget="float_time"/>
+                                <field name="worked_hours" string="Work Hours" widget="float_time" sum="Total"/>
+                                <field name="late" widget="float_time" sum="Total"/>
+                                <field name="penalties_1"/>
+                                <field name="penalties_2"/>
+                                <field name="over_time" widget="float_time" sum="Total"/>
+                                <field name="early_sign_in" widget="float_time" sum="Total"/>
+                                <field name="early_leave" widget="float_time" sum="Total"/>
+                            </tree>
+                        </field>
+                        <group>
+                            <group>
+                                <field name="total_penalties_1"/>
+                                <field name="total_penalties_2"/>
+                            </group>
+                            <group>
+                                <field name="sum_penalties"/>
+                                <field name="number_of_days_to_attend"/>
+                            </group>
+                            <group>
+                            </group>
+                        </group>
+                    </page>
+                    <page string="Attendance Shifts" name="attendance_shifts">
+                        <field name="shift_name_ids">
+                            <tree edit="false" create="false">
+                                <field name="hour_from"/>
+                                <field name="hour_to"/>
+                            </tree>
+                        </field>
+                    </page>
+                    <page string="OverTime" name="overtime">
+                        <field name="overtime_payroll_ids">
+                            <tree edit="false" create="false">
+                                <field name="employee_id"/>
+                                <field name="project_id"/>
+                                <field name="date_from"/>
+                                <field name="date_to"/>
+                                <field name="days_no_tmp"/>
+                                <field name="state"/>
+                                <field name="type" invisible="1"/>
+                                <field name="payslip_paid" widget="toggle_button"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+        <record id="id_hr_contract_penalties" model="ir.ui.view">
+            <field name="name">hr contract penalties</field>
+            <field name="model">hr.contract</field>
+            <field name="inherit_id" ref="hr_contract.hr_contract_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name='salary_and_advantages']" position="after">
+                    <group>
+                        <group>
+                            <field name="penalties_2"/>
+                            <field name="penalties_1"/>
+                        </group>
+                        <group></group>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

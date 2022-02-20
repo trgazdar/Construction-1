@@ -1,0 +1,704 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* procurment_list_project
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-11 13:52+0000\n"
+"PO-Revision-Date: 2022-01-11 13:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_needaction
+msgid "Action Needed"
+msgstr ""
+
+#. module: purchase
+#: model:ir.model.fields,field_description:purchase.field_purchase_order__date_order
+msgid "Order Deadline"
+msgstr "الموعد النهائي للطلب"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__qty_actually
+msgid "Actual Qty"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__analytic_account_id
+msgid "Analytic Account"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__code__a
+msgid "Approved as submitted"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__code__b
+msgid "Approved with comments"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_ir_attachment
+#: model:ir.model.fields,field_description:procurment_list_project.field_ir_attachment__procurment_attachment_ref
+#: model:ir.model.fields,field_description:procurment_list_project.field_mrp_document__procurment_attachment_ref
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__doc_attachment_id
+msgid "Attachment"
+msgstr "مرفق"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_attachment_count
+msgid "Attachment Count"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__account_move__type_bill__c
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__material_purchase_requisition__type_pr__c
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list__type_send__c
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__type_send_line__c
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__purchase_order__type_po__c
+msgid "Civil"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:res.groups,name:procurment_list_project.group_control_po_validate
+msgid "Control PO Validate"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:res.groups,name:procurment_list_project.group_control_po_validate_type_c
+msgid "Control PO Validate (C)"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:res.groups,name:procurment_list_project.group_control_po_validate_type_e
+msgid "Control PO Validate (E)"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:res.groups,name:procurment_list_project.group_control_po_validate_type_m
+msgid "Control PO Validate (M)"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__cost_id
+msgid "Cost"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__cost_price
+msgid "Cost/Price"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__create_uid
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__create_uid
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__create_date
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__create_date
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_location__is_default
+msgid "Default Location?"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__department_id
+msgid "Department"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__description
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_lines_attachment_view_form
+msgid "Description"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__location_id
+msgid "Destination Location"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__code__d
+msgid "Disapproved see attached sheet"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__discount
+msgid "Discount %"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_account_move__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_ir_attachment__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition_line__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order_line__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_location__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_move__display_name
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_picking__display_name
+msgid "Display Name"
+msgstr "الاسم المعروض"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__doc_count
+msgid "Doc Count"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__name
+msgid "Document Number"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__account_move__type_bill__e
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__material_purchase_requisition__type_pr__e
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list__type_send__e
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__type_send_line__e
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__purchase_order__type_po__e
+msgid "Electricity"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_follower_ids
+msgid "Followers"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_channel_ids
+msgid "Followers (Channels)"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_partner_ids
+msgid "Followers (Partners)"
+msgstr ""
+
+#. module: procurment_list_project
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.view_purchase_order_inherit_form
+msgid "GM Approve"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_account_move__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_ir_attachment__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition_line__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order_line__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_location__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_move__id
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_picking__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,help:procurment_list_project.field_procurment_list__message_needaction
+#: model:ir.model.fields,help:procurment_list_project.field_procurment_list__message_unread
+msgid "If checked, new messages require your attention."
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,help:procurment_list_project.field_procurment_list__message_has_error
+#: model:ir.model.fields,help:procurment_list_project.field_procurment_list__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_stock_location
+msgid "Inventory Locations"
+msgstr "مواقع المخزون"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_is_follower
+msgid "Is Follower"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__job_id
+msgid "Job"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__job_cost_line_id
+msgid "Job Cost Line"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__job_type_id
+msgid "Job Type"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_account_move
+msgid "Journal Entry"
+msgstr "قيد اليومية"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_account_move____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_ir_attachment____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition_line____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order_line____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_location____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_move____last_update
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_picking____last_update
+msgid "Last Modified on"
+msgstr "آخر تعديل في"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__write_uid
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__write_uid
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__write_date
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__write_date
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_main_attachment_id
+msgid "Main Attachment"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__account_move__type_bill__m
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__material_purchase_requisition__type_pr__m
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list__type_send__m
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__type_send_line__m
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__purchase_order__type_po__m
+msgid "Mechanics"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_has_error
+msgid "Message Delivery error"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_ids
+msgid "Messages"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__moved
+msgid "Moved"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__note
+msgid "Note"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_needaction_counter
+msgid "Number of Actions"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_has_error_counter
+msgid "Number of errors"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,help:procurment_list_project.field_procurment_list__message_needaction_counter
+msgid "Number of messages which requires an action"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,help:procurment_list_project.field_procurment_list__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,help:procurment_list_project.field_procurment_list__message_unread_counter
+msgid "Number of unread messages"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__picking_type_id
+msgid "Operation Type"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__remain_partial_qty
+msgid "Ordered Qty"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__send_to_po
+msgid "PO"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__send_to_pr
+msgid "PR"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__parent_product
+msgid "Parent Product"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__code__p
+msgid "Pending"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__planned_qty
+msgid "Planned Qty"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order_line__procurement_line_id
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_move__procurement_line_id
+msgid "Procurement Line"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_procurment_list
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_picking__procurement_list_id
+msgid "Procurement List"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_procurment_list_lines
+msgid "Procurement List Lines"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__procurment_id
+msgid "Procurment ID"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines_attachment__procurment_line_ref
+msgid "Procurment Line Ref"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.ui.menu,name:procurment_list_project.menu_procurment_list
+#: model:ir.ui.menu,name:procurment_list_project.menu_procurment_list2
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_view_tree
+msgid "Procurment List"
+msgstr ""
+
+#. module: procurment_list_project
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_lines_attachment_view_tree
+msgid "Procurment List Attachment"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.actions.act_window,name:procurment_list_project.procurment_list
+msgid "Procurment list"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__project_id
+msgid "Project"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__procurment_lines
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_view_form
+msgid "Project tender"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_purchase_order
+msgid "Purchase Order"
+msgstr "أمر شراء"
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "بند أمر الشراء"
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_material_purchase_requisition
+msgid "Purchase Requisition"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__product_code
+msgid "Reference"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__partial_qty
+msgid "Residual Qty"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__returned_date
+msgid "Return Date"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__code__c
+msgid "Revised and Re submitial required"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__sub_procurement_lines
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_view_form
+msgid "Sample List"
+msgstr ""
+
+#. module: procurment_list_project
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_view_form
+msgid "Send to PO"
+msgstr ""
+
+#. module: procurment_list_project
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_view_form
+msgid "Send to PR"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__source_location_id
+msgid "Source Location"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_stock_move
+msgid "Stock Move"
+msgstr "حركة المخزون"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__sub_procurement_id
+msgid "Sub Procurement"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__submitted_date
+msgid "Submission Date"
+msgstr ""
+
+#. module: procurment_list_project
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_view_form
+msgid "Submittal"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__taken_partial_qty
+msgid "TK Partial Qty"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_stock_picking
+msgid "Transfer"
+msgstr "الشحنة"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_account_bank_statement_line__type_bill
+#: model:ir.model.fields,field_description:procurment_list_project.field_account_move__type_bill
+#: model:ir.model.fields,field_description:procurment_list_project.field_account_payment__type_bill
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition__type_pr
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__type_send
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__item_type
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__type_send_line
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order__type_po
+msgid "Type"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__code__e
+msgid "Under Preview"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_unread
+msgid "Unread Messages"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__message_unread_counter
+msgid "Unread Messages Counter"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__uom_id
+msgid "Uom"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order__validate_done
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.view_purchase_order_inherit_form
+msgid "Validate"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__website_message_ids
+msgid "Website Messages"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,help:procurment_list_project.field_procurment_list__website_message_ids
+msgid "Website communication history"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__action_line
+msgid "active"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:res.groups,name:procurment_list_project.group_procurment_list_add
+#: model:res.groups,name:procurment_list_project.group_procurment_list_lines_add
+#: model:res.groups,name:procurment_list_project.group_procurment_list_lines_attachment_add
+msgid "add"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__code
+msgid "code"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__partner_id
+msgid "customer"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:res.groups,name:procurment_list_project.group_procurment_list_delete
+#: model:res.groups,name:procurment_list_project.group_procurment_list_lines_attachment_delete
+#: model:res.groups,name:procurment_list_project.group_procurment_list_lines_delete
+msgid "delete"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:res.groups,name:procurment_list_project.group_procurment_list_edit
+#: model:res.groups,name:procurment_list_project.group_procurment_list_lines_attachment_edit
+#: model:res.groups,name:procurment_list_project.group_procurment_list_lines_edit
+msgid "edit"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__end_date
+msgid "end date"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition_line__cost_id
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_move__cost_id
+msgid "job cost center"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_material_purchase_requisition_line__job_cost_line_id
+#: model:ir.model.fields,field_description:procurment_list_project.field_stock_move__job_cost_line_id
+msgid "job cost line"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_material_purchase_requisition_line
+msgid "material.purchase.requisition.line"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.module.category,name:procurment_list_project.module_category_interior_procurment_list
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_lines_attachment_view_form
+#: model_terms:ir.ui.view,arch_db:procurment_list_project.procurment_list_view_form
+msgid "procurment list"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.module.category,name:procurment_list_project.module_category_interior_procurment_list_lines_attachment
+msgid "procurment list Attachment"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.module.category,name:procurment_list_project.module_category_interior_procurment_list_lines
+msgid "procurment list lines"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model,name:procurment_list_project.model_procurment_list_lines_attachment
+msgid "procurment.list.lines.attachment"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__product
+msgid "product"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__name
+msgid "project name"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__project_no
+msgid "project_no"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list__start_date
+msgid "start date"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__item_type__transaction
+msgid "transaction"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_purchase_order_line__validate_qty
+msgid "validate Qty"
+msgstr "التحقق من صحة الكمية"
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__vendor
+msgid "vendor"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields.selection,name:procurment_list_project.selection__procurment_list_lines__item_type__view
+msgid "view"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__name
+msgid "work item"
+msgstr ""
+
+#. module: procurment_list_project
+#: model:ir.model.fields,field_description:procurment_list_project.field_procurment_list_lines__work_item_code
+msgid "work item code"
+msgstr ""
