@@ -14,3 +14,4 @@ class Contracts(models.Model):
     is_owner_contract = fields.Boolean(string='Owner Contract')
     is_subcontractor_contract = fields.Boolean(string='Subcontractor Contract')
     terms_conditions = fields.Html(string="Contract Terms and Conditions", required=False, )
+
