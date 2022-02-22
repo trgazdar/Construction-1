@@ -151,6 +151,10 @@ class JobCostLine(models.Model):
         'account.analytic.account',
         string='Analytic Account',
     )
+    partner_id = fields.Many2one(
+        'res.partner',
+        string='Vendor',
+    )
     currency_id = fields.Many2one(
         'res.currency',
         string='Currency',
