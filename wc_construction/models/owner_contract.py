@@ -385,6 +385,11 @@ class OwnerContractLine(models.Model):
 
     update_product = fields.Boolean(string="Update Products", )
     delete_line = fields.Boolean(default=True)
+    project_id = fields.Many2one(comodel_name="project.project", string="Project Name", required=False,
+                                 related="owner_contract_id.project_id", store=True)
+    job_cost_sheets_id = fields.Many2one(comodel_name="job.costing", string="Job Cost Sheets", required=False,
+                                         )
+
 
     @api.onchange('product_id')
     def get_domins_plane_cat(self):
