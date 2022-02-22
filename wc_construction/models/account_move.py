@@ -313,6 +313,22 @@ class AccountMove(models.Model):
                     'name': self.contract_project_id.name + '-' + "Analytic" if self.contract_project_id else '_',
                     'account_id': self.contract_project_id.analytic_account_id.id
                 })
+        for rec in self:
+            for line in rec.invoice_line_ids:
+                if line.job_cost_sheets_id:
+                    x = self.env['job.type'].sudo().search([('job_type', '=', 'subcontractor')], limit=1)
+                    line.job_cost_sheets_id.subcontractor_line_ids = [(0, 0, {
+                        'date': rec.invoice_date,
+                        'product_id': line.product_id.id,
+                        'description': line.name,
+                        'reference': rec.name,
+                        'qty_per_line': line.current_qty2,
+                        'uom_id': line.product_uom_id.id,
+                        'cost_price': line.price_unit2,
+                        'product_qty': line.current_qty2,
+                        'job_type': 'subcontractor',
+                        'job_type_id': x.id,
+                    })]
         return res
     
 
@@ -967,6 +983,20 @@ class AccountMoveLine(models.Model):
     is_deduction = fields.Boolean(string='Is Deduction')
     is_final_downpaymet_line = fields.Boolean('Is final downpayment Line', default=False)
     work_plan_item_id = fields.Many2one('work.plan.items.line', string='Work Plan Item')
+    job_cost_sheets_id = fields.Many2one(comodel_name="job.costing", string="Job Cost Sheets", required=False,
+                                         compute="get_job_cost_sheets", store=True)
+
+    @api.depends('product_id')
+    def get_job_cost_sheets(self):
+        for rec in self:
+            product = self.env['project.tender'].sudo().search([('related_product', '=', rec.product_id.id)], limit=1)
+            job_cost_sheet = self.env['job.costing'].sudo().search([('tender_id', '=', product.id)],
+                                                                   limit=1)
+            if job_cost_sheet:
+                rec.job_cost_sheets_id = job_cost_sheet.id
+            else:
+                rec.job_cost_sheets_id = False
+
     def get_price_after_tax(self):
         for rec in self:
             rec.price_after_tax=rec.price_subtotal
