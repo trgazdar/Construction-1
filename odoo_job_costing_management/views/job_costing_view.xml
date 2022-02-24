@@ -106,6 +106,7 @@
                                     <field name="job_type" invisible="1"/>
                                     <field name="job_type_id" domain="[('job_type','=',job_type)]" required="1"/>
                                     <field name="product_id"/>
+                                    <field name="partner_id"/>
                                     <field name="description"/>
                                     <field name="reference"/>
                                     <field name="qty_per_line" string="QTY Per Line" sum="Total" required="1"/>
