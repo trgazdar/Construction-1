@@ -568,3 +568,22 @@ class ConstrainedBy(models.Model):
                                                       ('signing_of_contract', 'Signing of Contract'),
                                                       ('advanced_payment', 'Advanced Payment'),
                                                       ('IFC_drawings', 'IFC drawings'), ], required=False, )
+#
+# class AccountInvoiceLine(models.Model):
+#     _inherit = "account.move.line"
+
+
+    # @api.depends('previous_qty', 'current_qty2')
+    # def calculate_total_qty(self):
+    #     for rec in self:
+    #         if rec.move_id.contract_type == 'contractor':
+    #             rec.total_qty = rec.total_qty
+    #             if rec.current_qty2 != 0 or rec.previous_qty != 0:
+    #                 rec.total_qty = rec.previous_qty + rec.current_qty2
+    #         else:
+    #             rec.total_qty = rec.total_qty
+    #             for line in rec.move_id.contract_id.contract_line_ids:
+    #                 if rec.product_id == line.product_id and rec.name == line.work_plan_item_id.name:
+    #                     rec.total_qty = line.total_work_plan_qty
+    #                 else:
+    #                     rec.total_qty = rec.total_qty
