@@ -563,9 +563,9 @@ class ConstrainedBy(models.Model):
                                                       ('signing_of_contract', 'Signing of Contract'),
                                                       ('advanced_payment', 'Advanced Payment'),
                                                       ('IFC_drawings', 'IFC drawings'), ], required=False, )
-
-class AccountInvoiceLine(models.Model):
-    _inherit = "account.move.line"
+#
+# class AccountInvoiceLine(models.Model):
+#     _inherit = "account.move.line"
 
 
     # @api.depends('previous_qty', 'current_qty2')
