@@ -31,7 +31,11 @@ class WorkPlanLines(models.Model):
             if rec.plan_items_id:
                 rec.work_plan_id=self.env['work.plan'].search([('project_id','=',rec.plan_items_id.project_id.id)]).id
 
-
+    @api.model
+    def create(self, vals_list):
+        res = super(WorkPlanLines, self).create(vals_list)
+        res.get_product_data()
+        return res
 
     @api.onchange('product_id')
     def get_product_data(self):

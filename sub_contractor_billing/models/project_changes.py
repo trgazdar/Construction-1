@@ -10,6 +10,10 @@ class Project(models.Model):
         team = self.env['crm.team'].search([('has_team_tender', '=', True)]).id
         return team
 
+    client_specialist_id = fields.Many2one(comodel_name="res.partner", string="Client Specialist", required=False, )
+    consultant_id = fields.Many2one(comodel_name="consultant.consultant", string="Consultant",
+                                    help="The Project Consultant Office")
+    client_manager = fields.Char(string="Client Manager", required=False, )
     project_no = fields.Char('Project Number')
     project_start_date = fields.Date(string='Project Beginning')
     project_end_date = fields.Date(sting='Project End')
@@ -436,15 +440,15 @@ class Project(models.Model):
             frac = int(str(parent)[2:]) - 100
             root = parent + abs(frac) - 1
 
-        for line in self.project_tender_ids:
-            if not line.related_task_id:
-                raise ValidationError(_('You should add related job order in project tender lines..'))
+        # for line in self.project_tender_ids:
+        #     if not line.related_task_id:
+        #         raise ValidationError(_('You should add related job order in project tender lines..'))
 
         dic = {'discount': self.discount, 'name': self.id, 'project_no': self.project_no,
                'partner_id': self.partner_id.id, 'start_date': self.project_start_date,
                'end_date': self.project_end_date, 'procurment_lines': list,
                'analytic_account_id': self.analytic_account_id.id, 'location_id': stock_locations.id,
-               'client_specialist_id': self.client_specialist_id.id, 'consultant': self.consultant_id and self.consultant_id.id}
+               'client_specialist_id': self.client_specialist_id.id, 'consultant': self.consultant_id.id}
         pl = self.env['procurment.list']
         pl.create(dic)
 

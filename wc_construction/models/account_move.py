@@ -871,7 +871,9 @@ class AccountMove(models.Model):
                     'exclude_from_invoice_tab': False,
                     'tax_ids': rec.tax_id.ids,
                     'analytic_account_id': self.contract_project_id.analytic_account_id.id,
-                    'job_cost_id': job_cost.id
+                    'job_cost_id': job_cost.id,
+                    'plan_item_id': rec.plan_item_id.id,
+                    'plan_category_id': rec.plan_category_id.id,
                 }))
             self._onchange_partner_id()
 
@@ -986,6 +988,8 @@ class AccountMoveLine(models.Model):
     work_plan_item_id = fields.Many2one('work.plan.items.line', string='Work Plan Item')
     job_cost_sheets_id = fields.Many2one(comodel_name="job.costing", string="Job Cost Sheets", required=False,
                                          compute="get_job_cost_sheets", store=True)
+    plan_item_id = fields.Many2one(comodel_name="work.plan.items", required=False, )
+    plan_category_id = fields.Many2one(comodel_name="work.plan.items.cat", required=False, )
 
     @api.depends('product_id')
     def get_job_cost_sheets(self):
