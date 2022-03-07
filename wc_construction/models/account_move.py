@@ -9,6 +9,8 @@ import base64
 from io import BytesIO
 from odoo import models, fields, api
 import qrcode
+from odoo.tools.misc import format_date
+
 
 
 
