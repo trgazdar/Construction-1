@@ -317,7 +317,7 @@ class AccountMove(models.Model):
                 })
         for rec in self:
             for line in rec.invoice_line_ids:
-                if line.job_cost_sheets_id:
+                if line.job_cost_sheets_id and line.product_id:
                     job_type = self.env['job.type'].sudo().search([('job_type', '=', 'subcontractor')], limit=1)
                     line.job_cost_sheets_id.subcontractor_line_ids = [(0, 0, {
                         'date': rec.invoice_date,
