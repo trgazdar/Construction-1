@@ -11,7 +11,7 @@
 
     # any module necessary for this one to work correctly
     'depends': ['base', 'project', 'sale', 'purchase', 'account', 'account_accountant',
-                # 'odoo_job_costing_management',
+                'odoo_job_costing_management',
                 'sub_contractor_billing', 'project_qr_code'],
 
     # always loaded
