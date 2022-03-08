@@ -40,25 +40,25 @@ class JobCostLine(models.Model):
                 rec.total_cost = rec.product_qty * rec.cost_price
 
     # @api.depends('purchase_order_line_ids', 'purchase_order_line_ids.order_id.state')
-    def _compute_actual_transfer_qty(self):
-        for rec in self:
-            rec.actual_transfer_qty = False
-            # for line in rec.purchase_order_line_ids:
-                # transfer = self.env['stock.move'].search([('product_id', '=', line.product_id.id),
-                                                          # ('product_id', '=', rec.product_id.id),
-                                                          # ('procurement_line_id', '=', line.procurement_line_id.id),
-                                                          # ('state', 'in', ['partially_available', 'assigned', 'done'])])
-
-            transfer = self.env['stock.move'].search([('product_id', '=', rec.product_id.id), ('cost_id', '=', rec.direct_id.id), ('job_cost_line_id', '=', rec.id), ('state', 'in', ['done']), ('procurement_line_id', '!=', False)])
-                                                      # ('state', 'in', ['partially_available', 'assigned', 'done'])])
-                                                    
-            if transfer:
-                # for trans in transfer:
-                #     rec.actual_transfer_qty += trans.reserved_availability if trans.reserved_availability else trans.quantity_done
-                # break
-                for trans in transfer:
-                    rec.actual_transfer_qty += trans.quantity_done
-                break
+    # def _compute_actual_transfer_qty(self):
+    #     for rec in self:
+    #         rec.actual_transfer_qty = False
+    #         # for line in rec.purchase_order_line_ids:
+    #             # transfer = self.env['stock.move'].search([('product_id', '=', line.product_id.id),
+    #                                                       # ('product_id', '=', rec.product_id.id),
+    #                                                       # ('procurement_line_id', '=', line.procurement_line_id.id),
+    #                                                       # ('state', 'in', ['partially_available', 'assigned', 'done'])])
+    #
+    #         transfer = self.env['stock.move'].search([('product_id', '=', rec.product_id.id), ('cost_id', '=', rec.direct_id.id), ('job_cost_line_id', '=', rec.id), ('state', 'in', ['done']), ('procurement_line_id', '!=', False)])
+    #                                                   # ('state', 'in', ['partially_available', 'assigned', 'done'])])
+    #
+    #         if transfer:
+    #             # for trans in transfer:
+    #             #     rec.actual_transfer_qty += trans.reserved_availability if trans.reserved_availability else trans.quantity_done
+    #             # break
+    #             for trans in transfer:
+    #                 rec.actual_transfer_qty += trans.quantity_done
+    #             break
 
     @api.depends('purchase_order_line_ids', 'purchase_order_line_ids.product_qty',
                  'purchase_order_line_ids.order_id.state')
@@ -206,7 +206,7 @@ class JobCostLine(models.Model):
     )
 
     actual_transfer_qty = fields.Float(string='Actual Transferred QTY',
-                                       compute='_compute_actual_transfer_qty', digits='Payment Decimal')
+                                       digits='Payment Decimal')
 
     employee_id = fields.Many2one('hr.employee', string='Employee')
 
