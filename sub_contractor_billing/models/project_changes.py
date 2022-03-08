@@ -449,8 +449,8 @@ class Project(models.Model):
                'end_date': self.project_end_date, 'procurment_lines': list,
                'analytic_account_id': self.analytic_account_id.id, 'location_id': stock_locations.id,
                'client_specialist_id': self.client_specialist_id.id, 'consultant': self.consultant_id.id}
-        pl = self.env['procurment.list']
-        pl.create(dic)
+        # pl = self.env['procurment.list']
+        # pl.create(dic)
 
         project_task = self.env['project.task']
         key_personel_lines = []
