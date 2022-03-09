@@ -143,6 +143,8 @@
                                             <field name="product_uom_id"/>
                                             <field name="total_work_plan_qty"
                                                    attrs="{'column_invisible': [('parent.type','=','contractor')]}"/>
+                                            <field name="total_work_plan_prsantig"
+                                                   attrs="{'column_invisible': [('parent.type','=','contractor')]}"/>
                                             <field name="price_unit"/>
                                             <field name="tax_id" widget="many2many_tags"/>
                                             <field name="price_subtotal" sum="Total"/>

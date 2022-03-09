@@ -87,9 +87,10 @@
                 </xpath>
                 <xpath expr="//notebook//page//field[@name='invoice_line_ids']//tree//field[@name='price_unit']"
                        position="replace">
-                    <field name="price_unit"  force_save="1" invisible="1"/>
+                    <field name="price_unit" force_save="1" invisible="1"/>
                 </xpath>
-                <xpath expr="//notebook//page//field[@name='invoice_line_ids']//tree//field[@name='quantity']" position="attributes">
+                <xpath expr="//notebook//page//field[@name='invoice_line_ids']//tree//field[@name='quantity']"
+                       position="attributes">
                     <attribute name="invisible">1</attribute>
                 </xpath>
 
@@ -106,6 +107,15 @@
                     <field name="is_deduction" invisible="1"/>
                     <field name="plan_item_id"/>
                     <field name="plan_category_id"/>
+                    <field name="contract_line_id" invisible="1"/>
+
+                </xpath>
+                <xpath expr="//notebook//page//field[@name='line_ids']//tree//field[@name='product_id']"
+                       position="before">
+                    <field name="contract_line_id" invisible="1"/>
+                    <field name="plan_item_id" invisible="1"/>
+                    <field name="plan_category_id" invisible="1"/>
+                    <field name="actual_quant" invisible="0"/>
                 </xpath>
                 <xpath expr="//field[@name='invoice_line_ids']/tree//field[@name='product_id']" position="after">
                     <field name="job_cost_sheets_id"/>

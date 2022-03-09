@@ -377,6 +377,16 @@ class OwnerContractLine(models.Model):
     tax_id = fields.Many2many(comodel_name="account.tax", string="Taxes", required=False, )
     price_subtotal = fields.Float(string="Subtotal", compute='get_price_subtotal', store=True, required=False, )
     total_work_plan_qty = fields.Float(string="Completed Qty", required=False,readonly=True )
+    total_work_plan_prsantig = fields.Float(string="Completed %", required=False,readonly=True ,compute="get_total_work_plan_prsantig")
+
+    @api.depends("total_work_plan_qty","quantity")
+    def get_total_work_plan_prsantig(self):
+        for rec in self:
+            if rec.quantity:
+                rec.total_work_plan_prsantig=rec.total_work_plan_qty/rec.quantity*100
+            else:
+                rec.total_work_plan_prsantig=100
+
     note = fields.Text(string="Note", required=False, )
 
     owner_contract_id = fields.Many2one(comodel_name="owner.contract", string="", required=False, )

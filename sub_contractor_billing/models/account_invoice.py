@@ -113,7 +113,7 @@ class AccountInvoiceLine(models.Model):
                     previous_qty += sum(
                         line.current_qty2 for line in prev.invoice_line_ids
                         if line.product_id == rec.product_id)
-                rec.previous_qty = previous_qty
+                # rec.previous_qty = previous_qty
                 rec.total_contract_qty = sum(line.quantity
                                              for line in rec.move_id.contract_id.contract_line_ids
                                              if line.product_id == rec.product_id)
@@ -128,19 +128,18 @@ class AccountInvoiceLine(models.Model):
                         previous_qty += sum(
                             line.current_qty2 for line in prev.invoice_line_ids
                             if line.product_id == rec.product_id and line.work_plan_item_id == rec.work_plan_item_id)
-                    rec.previous_qty = previous_qty
+                    # rec.previous_qty = previous_qty
                     rec.total_contract_qty = sum(line.quantity for line in rec.move_id.contract_id.contract_line_ids if line.product_id == rec.product_id)
-            else:
-                rec.previous_qty = previous_qty
+            # else:
+            #     rec.previous_qty = previous_qty
 
     def calculate_tender_qty_amount(self):
         for rec in self:
-            rec.tender_qty = 0.0
-            rec.tender_amount = 0.0
-            rec.tender_qty = sum(line.quantity for line in rec.move_id.contract_id.contract_line_ids
-                                         if line.product_id == rec.product_id)
-            rec.tender_amount = sum(line.price_subtotal for line in rec.move_id.contract_id.contract_line_ids
-                                         if line.product_id == rec.product_id)
+            # rec.tender_qty = 0.0
+            # rec.tender_amount = 0.0
+            # rec.tender_qty = sum(line.quantity for line in rec.move_id.contract_id.contract_line_ids
+            #                              if line.product_id == rec.product_id)
+            rec.tender_amount = rec.tender_qty*rec.price_unit2
 
     
 
@@ -149,9 +148,14 @@ class AccountInvoiceLine(models.Model):
     def calculate_current_qty(self):
         for line in self:
             if line.previous_qty:
-                line.current_qty2 = line.actual_quant - line.previous_qty
+                current_qty2 = line.actual_quant - line.previous_qty
             else:
-                line.current_qty2 = line.actual_quant
+                current_qty2 = line.actual_quant
+            if current_qty2>=0:
+                line.current_qty2=current_qty2
+            else:
+                line.current_qty2=0
+
             
 
 
@@ -164,13 +168,14 @@ class AccountInvoiceLine(models.Model):
 
     
 
-    previous_qty = fields.Float(string="Previous QTY", compute='calculate_previous_qty', store=True,digits='Payment Decimal')
+    previous_qty = fields.Float(string="Previous QTY",  store=True,digits='Payment Decimal')
     total_contract_qty = fields.Float(string='Total Contract QTY',digits='Payment Decimal')
     current_qty2 = fields.Float(string='Current Qty', compute='calculate_current_qty',digits='Payment Decimal')
-    actual_quant = fields.Float(string='Actual Quantity', store=True,digits='Payment Decimal')
-    tender_qty = fields.Float(string='Tender Qty', compute='calculate_tender_qty_amount',digits='Payment Decimal')
+    actual_quant = fields.Float(string='Actual Quantity', digits='Payment Decimal')
+    tender_qty = fields.Float(string='Tender Qty', digits='Payment Decimal')
     tender_amount = fields.Float(string='Tender Amount', compute='calculate_tender_qty_amount',digits='Payment Decimal')
     total_qty = fields.Float(string="Total QTY ",compute='calculate_total_qty', store=True,digits='Payment Decimal')
+    contract_line_id = fields.Many2one(comodel_name="owner.contract.line", string="", required=False, )
 
     # @api.depends('total_qty')
     # def calculate_total_amount(self):
