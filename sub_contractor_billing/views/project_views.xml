@@ -73,7 +73,7 @@
         <record id="odoo_job_costing_management.open_view_project_job_all_config" model="ir.actions.act_window">
             <field name="name">Projects</field>
             <field name="res_model">project.project</field>
-            <field name="domain">[('tender_team_ids', 'in', uid)]</field>
+            <field name="domain">[]</field>
             <field name="view_mode">tree,kanban,form</field>
             <field name="search_view_id" ref="project.view_project_project_filter"/>
             <field name="help" type="html">

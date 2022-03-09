@@ -26,6 +26,23 @@ class ProjectTender(models.Model):
     total_amount_unit_before_discount = fields.Float(string="Total Before Discount",
                                                      compute='get_total_amount_unit_before_discount', required=False)
     lump_sum_qty = fields.Integer(string='DWG')
+    total_work_plan_qty = fields.Float(string="Completed Qty",compute="get_total_work_plan_qty", required=False, readonly=True)
+    total_work_plan_prsantig = fields.Float(string="Completed %", required=False, readonly=True,
+                                            compute="get_total_work_plan_prsantig")
+
+    @api.depends("name")
+    def get_total_work_plan_qty(self):
+        for rec in self:
+            rec.total_work_plan_qty=sum(list(rec.job_cost_id.mapped("subcontractor_line_ids").mapped('qty_per_line')))
+
+
+    @api.depends("total_work_plan_qty", "tender_qty")
+    def get_total_work_plan_prsantig(self):
+        for rec in self:
+            if rec.tender_qty:
+                rec.total_work_plan_prsantig = rec.total_work_plan_qty / rec.tender_qty * 100
+            else:
+                rec.total_work_plan_prsantig = 100
 
     @api.depends('project_profit', 'job_cost_total', 'customer_cost', 'tender_qty', 'lump_sum_qty')
     def get_total_amount_unit_before_discount(self):

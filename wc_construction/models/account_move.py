@@ -317,6 +317,9 @@ class AccountMove(models.Model):
                 })
         for rec in self:
             for line in rec.invoice_line_ids:
+                print("line.contract_line_id",line.contract_line_id)
+                print("line.line.actual_quant",line.actual_quant)
+                line.contract_line_id.total_work_plan_qty=line.actual_quant
                 if line.job_cost_sheets_id and line.product_id:
                     job_type = self.env['job.type'].sudo().search([('job_type', '=', 'subcontractor')], limit=1)
                     line.job_cost_sheets_id.subcontractor_line_ids = [(0, 0, {
@@ -868,7 +871,7 @@ class AccountMove(models.Model):
                     'work_plan_item_id': rec.work_plan_item_id.id if rec.work_plan_item_id else False,
                     'price_unit': rec.price_unit,
                     'price_unit2': rec.price_unit,
-                    'total_qty': rec.total_work_plan_qty,
+                    'total_qty': rec.quantity,
                     'product_uom_id': rec.product_uom_id.id,
                     'exclude_from_invoice_tab': False,
                     'tax_ids': rec.tax_id.ids,
@@ -876,10 +879,14 @@ class AccountMove(models.Model):
                     'job_cost_id': job_cost.id,
                     'plan_item_id': rec.plan_item_id.id,
                     'plan_category_id': rec.plan_category_id.id,
+                    'tender_qty': rec.quantity,
+                    'previous_qty': rec.total_work_plan_qty,
+                    'contract_line_id': rec.id,
                 }))
             self._onchange_partner_id()
-
+            print(55555555555555)
             if not self.invoice_final:
+                self.invoice_line_ids = False
                 self.invoice_line_ids = lines
 
             for line in self.invoice_line_ids:
@@ -889,7 +896,6 @@ class AccountMove(models.Model):
                 line.calculate_previous_qty()
                 line.onchange_completed_percentage_view()
             self._onchange_invoice_line_ids()
-
     @api.depends('partner_id', 'is_contract_invoice', 'contract_id')
     def get_contract_products(self):
         self.contract_products_ids = False
@@ -980,6 +986,8 @@ class AccountMoveLine(models.Model):
     _inherit = 'account.move.line'
 
     completed_percentage_view = fields.Float('% Completed View', default=100)
+    contract_line_id = fields.Many2one(comodel_name="owner.contract.line", string="", required=False, )
+
     price_unit2 = fields.Float(string='Price', digits='Payment Decimal')
     price_after_tax = fields.Float(string='Price after tax', digits='Payment Decimal',compute="get_price_after_tax")
 

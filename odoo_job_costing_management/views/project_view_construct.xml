@@ -16,6 +16,8 @@
                             <field name="related_task_id" options="{'no_create':True}"
                                    required="1" domain="[('project_id', '=', project_id)]"/>
                             <field name="tender_qty" attrs="{'required': [('item_type','=','transaction')]}"/>
+                            <field name="total_work_plan_qty" />
+                            <field name="total_work_plan_prsantig" />
                             <field name="uom_id" attrs="{'required': [('item_type','=','transaction')]}"/>
                             <field name="lump_sum_qty"
                                    attrs="{'column_invisible': [('parent.lump_sum_project','=',False)]}"/>

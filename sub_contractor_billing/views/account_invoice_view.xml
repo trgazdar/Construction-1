@@ -54,9 +54,15 @@
 
                 <xpath expr="//notebook//page//field[@name='invoice_line_ids']//tree//field[@name='quantity']"
                        position="after">
-                    <field name="actual_quant" force_save="1"/>
+                    <field name="actual_quant" />
                     <field name="previous_qty" force_save="1"/>
                     <field name="current_qty2" force_save="1"/>
+                </xpath>
+                <xpath expr="//notebook//page//field[@name='line_ids']//tree//field[@name='quantity']"
+                       position="after">
+                    <field name="actual_quant" invisible="1"/>
+                    <field name="previous_qty" invisible="1"/>
+                    <field name="current_qty2" invisible="1"/>
                 </xpath>
                 <xpath expr="//notebook//page//field[@name='invoice_line_ids']//tree//field[@name='quantity']"
                        position="replace">
@@ -67,7 +73,7 @@
                        position="after">
                     <field name="total_contract_qty" invisible="1" force_save="1"/>
                     <field name="total_qty" force_save="1"/>
-                    <field name="actual_quant" force_save="1" invisible="1"/>
+                    <field name="actual_quant"  invisible="1"/>
                     <field name="previous_qty" force_save="1" invisible="1"/>
                     <field name="current_qty2" force_save="1" invisible="1"/>
                     <field name="total_amount" force_save="1" invisible="1"/>

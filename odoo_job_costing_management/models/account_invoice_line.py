@@ -7,6 +7,8 @@ class AccountInvoiceLine(models.Model):
     
     job_cost_id = fields.Many2one(comodel_name="job.costing",string='Job Cost Center',store=True)
     job_cost_line_id = fields.Many2one(comodel_name="job.cost.line",string='Job Cost Line',store=True)
+    contract_line_id = fields.Many2one(comodel_name="owner.contract.line", string="", required=False, )
+
     
 
 # class AccountInvoice(models.Model):

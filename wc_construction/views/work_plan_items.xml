@@ -98,6 +98,7 @@
             <field name="arch" type="xml">
                 <tree string="">
                     <field name="all_name" string="name"/>
+                    <field name="project_id"/>
                 </tree>
             </field>
         </record>
