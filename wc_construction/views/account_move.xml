@@ -36,7 +36,7 @@
                     <field name="lines_updated" invisible="1"/>
                     <button name="update_deduction_lines" string="Update Deduction Lines" class="oe_highlight"
                             type="object"
-                            attrs="{'invisible': ['|', '|', ('state', '!=', 'draft'), ('lines_updated','=',True), ('contract_type', 'not in', ('contractor', 'subcontractor'))]}"/>
+                            attrs="{'invisible': ['|',('state', '!=', 'draft'),('contract_type', 'not in', ('contractor', 'subcontractor'))]}"/>
                     <button name="action_dep_approve" string="Validate" class="oe_highlight" type="object"
                             attrs="{'invisible': ['|', ('state', '!=', 'draft'), ('is_need_approve','=',False)]}"/>
                     <button name="action_gm_approve" string="GM Approve" class="oe_highlight" type="object"

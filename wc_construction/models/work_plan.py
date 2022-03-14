@@ -3,33 +3,58 @@
 from odoo import models, fields, api
 from odoo.exceptions import ValidationError
 
+
 class WorkPlanLines(models.Model):
     _name = 'work.plan.line'
 
-    product_id = fields.Many2one(comodel_name="product.product",domain=[('is_tender_item','=',True)], string="tender Item", required=True, )
+    product_id = fields.Many2one(comodel_name="product.product", domain=[('is_tender_item', '=', True)],
+                                 string="tender Item", required=True, )
     work_plan_item_id = fields.Many2one(comodel_name="work.plan.items.line", string="Work Plan Item", required=False, )
     # category_id = fields.Many2one(comodel_name="work.plan.items.cat", string="category", required=False,related="work_plan_item_id.category_id" )
-    quantity = fields.Float(string="Quantity",  required=False, )
-    tender_quantity = fields.Float(string="Tender Quantity",  required=False, )
-    outstanding = fields.Float(string="outstanding quantity",  required=False, )
-    category_quantity = fields.Float(string="Category Quantity",  required=False, )
+    quantity = fields.Float(string="Quantity", required=False, )
+    tender_quantity = fields.Float(string="Tender Quantity", required=False, )
+    outstanding = fields.Float(string="outstanding quantity", required=False, )
+    category_quantity = fields.Float(string="Category Quantity", required=False, )
     work_plan_id = fields.Many2one(comodel_name="work.plan", string="", required=False, )
     work_plan_items_id = fields.Many2one(comodel_name="work.plan.items.cat", string="category", required=False, )
     plan_items_id = fields.Many2one(comodel_name="work.plan.items", string="Work Plan Item", required=False, )
     update_product = fields.Boolean(string="Update Products", )
+    completed_qty = fields.Float(string="Completed Qty", compute="get_completed_qty", required=False, readonly=True)
+    completed_percentage = fields.Float(string="Completed %", required=False, compute="get_completed_percentage")
+
+    @api.depends('product_id', 'completed_qty')
+    def get_completed_percentage(self):
+        for rec in self:
+            rec.completed_percentage = 0
+            if rec.quantity:
+                rec.completed_percentage = rec.completed_qty / rec.quantity * 100
+
+    @api.depends('product_id')
+    def get_completed_qty(self):
+        for rec in self:
+            rec.completed_qty = 0
+            if rec.work_plan_items_id:
+                rec.completed_qty = sum(list(self.env['owner.contract.line'].sudo().search(
+                    [('plan_category_id', '=', rec.work_plan_items_id.id),
+                     ('product_id', '=', rec.product_id.id)]).mapped('total_work_plan_qty')))
+            if rec.plan_items_id:
+                rec.completed_qty = sum(list(self.env['owner.contract.line'].sudo().search(
+                    [('plan_item_id', '=', rec.plan_items_id.id), ('product_id', '=', rec.product_id.id)]).mapped(
+                    'total_work_plan_qty')))
 
     @api.constrains('work_plan_items_id')
     def create_work_plan_items_id(self):
         for rec in self:
             if rec.work_plan_items_id:
-                rec.work_plan_id=self.env['work.plan'].search([('project_id','=',rec.work_plan_items_id.project_id.id)]).id
-
+                rec.work_plan_id = self.env['work.plan'].search(
+                    [('project_id', '=', rec.work_plan_items_id.project_id.id)]).id
 
     @api.constrains('plan_items_id')
     def create_work_items_id(self):
         for rec in self:
             if rec.plan_items_id:
-                rec.work_plan_id=self.env['work.plan'].search([('project_id','=',rec.plan_items_id.project_id.id)]).id
+                rec.work_plan_id = self.env['work.plan'].search(
+                    [('project_id', '=', rec.plan_items_id.project_id.id)]).id
 
     @api.model
     def create(self, vals_list):
@@ -50,16 +75,18 @@ class WorkPlanLines(models.Model):
                     lambda
                         m: m.name == rec.product_id.name).tender_qty or rec.plan_items_id.project_id.project_tender_ids.filtered(
                     lambda m: m.name == rec.product_id.name).tender_qty
-                cats=self.env['work.plan.items.cat'].search([('project_id','=',rec.work_plan_items_id.project_id.id),('create_uid','!=',False)])
-                lines=False
+                cats = self.env['work.plan.items.cat'].search(
+                    [('project_id', '=', rec.work_plan_items_id.project_id.id), ('create_uid', '!=', False)])
+                lines = False
                 if cats:
-                    lines=self.search([('work_plan_items_id','in',cats.ids),("product_id","=",rec.product_id.id)])
+                    lines = self.search(
+                        [('work_plan_items_id', 'in', cats.ids), ("product_id", "=", rec.product_id.id)])
                 if lines:
-                    rec.outstanding=rec.tender_quantity-sum(list(lines.mapped('quantity')))
+                    rec.outstanding = rec.tender_quantity - sum(list(lines.mapped('quantity')))
                 else:
-                    rec.outstanding=rec.tender_quantity
+                    rec.outstanding = rec.tender_quantity
             if rec.plan_items_id:
-                rec.category_quantity=sum(list(
+                rec.category_quantity = sum(list(
                     rec.plan_items_id.category_id.work_plan_line_items_ids.filtered(
                         lambda m: m.product_id.id == rec.product_id.id).mapped('quantity')))
                 rec.tender_quantity = rec.work_plan_items_id.project_id.project_tender_ids.filtered(
@@ -78,8 +105,7 @@ class WorkPlanLines(models.Model):
                 else:
                     rec.outstanding = rec.category_quantity
 
-
-    @api.onchange('update_product', 'quantity','product_id')
+    @api.onchange('update_product', 'quantity', 'product_id')
     def get_products_from_contract_quotation(self):
         for rec in self:
             products = []
@@ -95,27 +121,31 @@ class WorkPlanLines(models.Model):
 
             return {'domain': {'product_id': [('id', 'in', products)]}}
 
-    @api.onchange('product_id','work_plan_item_id')
+    @api.onchange('product_id', 'work_plan_item_id')
     def filter_work_plan_items(self):
-        work_plan_items = self.env['work.plan.items'].search([('project_id','=',self.work_plan_id.project_id.id)])
+        work_plan_items = self.env['work.plan.items'].search([('project_id', '=', self.work_plan_id.project_id.id)])
         work_plan_items_line = []
         for rec in work_plan_items:
             for line in rec.work_plan_items_line_ids:
                 work_plan_items_line.append(line.id)
 
-        return {'domain':{'work_plan_item_id':[('id','in',work_plan_items_line)]}}
+        return {'domain': {'work_plan_item_id': [('id', 'in', work_plan_items_line)]}}
 
 
 class WorkPlan(models.Model):
     _name = 'work.plan'
 
-    contract_id = fields.Many2one(comodel_name="owner.contract",domain=[('type','=','subcontractor')] ,string="Contract", required=False, )
+    contract_id = fields.Many2one(comodel_name="owner.contract", domain=[('type', '=', 'subcontractor')],
+                                  string="Contract", required=False, )
 
-    quotation_id = fields.Many2one(comodel_name="sale.order", string="Quotation",compute='get_customer',store=True, required=False, )
+    quotation_id = fields.Many2one(comodel_name="sale.order", string="Quotation", compute='get_customer', store=True,
+                                   required=False, )
     project_id = fields.Many2one(comodel_name="project.project", string="Project", required=True, )
-    customer_id = fields.Many2one(comodel_name="res.partner", string="Vendor",compute='get_customer',store=True, required=False, )
+    customer_id = fields.Many2one(comodel_name="res.partner", string="Vendor", compute='get_customer', store=True,
+                                  required=False, )
     date = fields.Date(string="Date", required=False, default=fields.Date.context_today)
-    work_plan_line_ids = fields.One2many(comodel_name="work.plan.line", inverse_name="work_plan_id", string="", required=False, )
+    work_plan_line_ids = fields.One2many(comodel_name="work.plan.line", inverse_name="work_plan_id", string="",
+                                         required=False, )
 
     @api.depends('project_id')
     def get_customer(self):
@@ -163,9 +193,3 @@ class WorkPlan(models.Model):
         # for line in self.invoice_line_ids:
         #     line._onchange_price_subtotal()
         # self._onchange_invoice_line_ids()
-
-
-
-
-
-

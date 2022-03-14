@@ -192,14 +192,20 @@ class OwnerContract(models.Model):
         if res.type == 'contractor':
             res.name = self.env['ir.sequence'].next_by_code('owner.contract.code')
             res.contract_id = self.env['contracts'].search([('is_owner_contract', '=', True)]).id
-            res.customer_account_id = res.contract_id.customer_account_id.id
-            res.revenue_account_id = res.contract_id.revenue_account_id.id
-            res.conditions = res.contract_id.terms_conditions
+            if not res.customer_account_id:
+                res.customer_account_id = res.contract_id.customer_account_id.id
+            if not res.revenue_account_id:
+                res.revenue_account_id = res.contract_id.revenue_account_id.id
+            if not res.conditions:
+                res.conditions = res.contract_id.terms_conditions
         elif res.type == 'subcontractor':
             res.contract_id = self.env['contracts'].search([('is_subcontractor_contract', '=', True)]).id
-            res.customer_account_id = res.contract_id.customer_account_id.id
-            res.revenue_account_id = res.contract_id.revenue_account_id.id
-            res.conditions = res.contract_id.terms_conditions
+            if not res.customer_account_id:
+                res.customer_account_id = res.contract_id.customer_account_id.id
+            if not res.revenue_account_id:
+                res.revenue_account_id = res.contract_id.revenue_account_id.id
+            if not res.conditions:
+                res.conditions = res.contract_id.terms_conditions
 
             if res.subcontractor_type == 'civil':
                 res.name = str(date_today.year) + '-' + str(res.project_id.project_no) + '-' + str('C-') + str(

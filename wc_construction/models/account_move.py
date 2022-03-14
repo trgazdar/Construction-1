@@ -12,9 +12,6 @@ import qrcode
 from odoo.tools.misc import format_date
 
 
-
-
-
 class AccountTax(models.Model):
     _inherit = 'account.tax'
 
@@ -44,7 +41,6 @@ class Deductions(models.Model):
 class AccountMove(models.Model):
     _inherit = 'account.move'
 
-
     contract_quotation_id = fields.Many2one(comodel_name="sale.order", string="Contract Quotation", required=False, )
     contract_project_id = fields.Many2one(comodel_name="project.project", string="Contract Project", required=False, )
     is_contract_invoice = fields.Boolean(string="", )
@@ -54,7 +50,7 @@ class AccountMove(models.Model):
     qr_code = fields.Binary("QR Code", compute='generate_qr_code')
 
     def create_qr_code(self, url):
-        qr = qrcode.QRCode(version=1,error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=20, border=4, )
+        qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=20, border=4, )
         qr.add_data(url)
         qr.make(fit=True)
         img = qr.make_image()
@@ -69,7 +65,6 @@ class AccountMove(models.Model):
         url = self.get_portal_url()
         system_parameter_url += url
         self.qr_code = self.create_qr_code(system_parameter_url)
-
 
     contract_type = fields.Selection(string="Contract Type",
                                      selection=[('contractor', 'Contractor'), ('subcontractor', 'Subcontractor'), ],
@@ -108,7 +103,8 @@ class AccountMove(models.Model):
 
     cashing_done = fields.Float(string="ما تم صرفه", compute='get_chashing_done_and_previous_chashing',
                                 required=False, )
-    previous_chashing = fields.Float(string="ما سبق دفعه من اجمالي العقد", compute='get_chashing_done_and_previous_chashing',
+    previous_chashing = fields.Float(string="ما سبق دفعه من اجمالي العقد",
+                                     compute='get_chashing_done_and_previous_chashing',
                                      required=False, )
     talyat = fields.Monetary(string="تعليات", required=False, )
     deductions = fields.Monetary(string="استقطاعات", required=False, )
@@ -139,10 +135,10 @@ class AccountMove(models.Model):
                                compute='_compute_num2words')
     project_id = fields.Many2one('account.analytic.account', string='Project', copy=False)
 
-
     @api.constrains('ref', 'move_type', 'partner_id', 'journal_id', 'invoice_date')
     def _check_duplicate_supplier_reference(self):
-        moves = self.filtered(lambda move: move.is_purchase_document() and move.ref and move.contract_type != 'subcontractor')
+        moves = self.filtered(
+            lambda move: move.is_purchase_document() and move.ref and move.contract_type != 'subcontractor')
         if not moves:
             return
 
@@ -170,14 +166,14 @@ class AccountMove(models.Model):
         ''', [tuple(moves.ids)])
         duplicated_moves = self.browse([r[0] for r in self._cr.fetchall()])
         if duplicated_moves:
-            raise ValidationError(_('Duplicated vendor reference detected. You probably encoded twice the same vendor bill/credit note:\n%s') % "\n".join(
-                duplicated_moves.mapped(lambda m: "%(partner)s - %(ref)s - %(date)s" % {
-                    'ref': m.ref,
-                    'partner': m.partner_id.display_name,
-                    'date': format_date(self.env, m.invoice_date),
-                })
-            ))
-    
+            raise ValidationError(
+                _('Duplicated vendor reference detected. You probably encoded twice the same vendor bill/credit note:\n%s') % "\n".join(
+                    duplicated_moves.mapped(lambda m: "%(partner)s - %(ref)s - %(date)s" % {
+                        'ref': m.ref,
+                        'partner': m.partner_id.display_name,
+                        'date': format_date(self.env, m.invoice_date),
+                    })
+                ))
 
     def _constrains_date_sequence(self):
         # Make it possible to bypass the constraint to allow edition of already messed up documents.
@@ -194,8 +190,9 @@ class AccountMove(models.Model):
             if sequence and date and date > constraint_date:
                 format_values = record._get_sequence_format_param(sequence)[1]
                 if (
-                    format_values['year'] and format_values['year'] != date.year % 10**len(str(format_values['year']))
-                    or format_values['month'] and format_values['month'] != date.month
+                        format_values['year'] and format_values['year'] != date.year % 10 ** len(
+                    str(format_values['year']))
+                        or format_values['month'] and format_values['month'] != date.month
                 ):
                     raise ValidationError(_(
                         "The %(date_field)s (%(date)s) doesn't match the %(sequence_field)s (%(sequence)s).\n"
@@ -205,7 +202,6 @@ class AccountMove(models.Model):
                         date_field=record._fields[record._sequence_date_field]._description_string(self.env),
                         sequence_field=record._fields[record._sequence_field]._description_string(self.env),
                     ))
-
 
     def _compute_num2words(self):
         self.amount_words = (num2words(self.amount_total, lang='ar')).upper()
@@ -300,11 +296,11 @@ class AccountMove(models.Model):
             if line.total_down_payment and not line.final_invoice:
                 line.down_payment_fixed = line.total_down_payment
             elif line.total_down_payment and line.final_invoice:
-                for invoice_line in line.invoice_line_ids.filtered(lambda x: x.name == 'Down Payment' and x.is_final_downpaymet_line == False):
+                for invoice_line in line.invoice_line_ids.filtered(
+                        lambda x: x.name == 'Down Payment' and x.is_final_downpaymet_line == False):
                     line.down_payment_fixed = invoice_line.price_subtotal
             elif line.down_payment_percentage:
                 line.down_payment_fixed = line.amount_total * line.down_payment_percentage / 100
-
 
     def action_post(self):
         res = super(AccountMove, self).action_post()
@@ -317,9 +313,9 @@ class AccountMove(models.Model):
                 })
         for rec in self:
             for line in rec.invoice_line_ids:
-                print("line.contract_line_id",line.contract_line_id)
-                print("line.line.actual_quant",line.actual_quant)
-                line.contract_line_id.total_work_plan_qty=line.actual_quant
+                print("line.contract_line_id", line.contract_line_id)
+                print("line.line.actual_quant", line.actual_quant)
+                line.contract_line_id.total_work_plan_qty = line.actual_quant
                 if line.job_cost_sheets_id and line.product_id:
                     job_type = self.env['job.type'].sudo().search([('job_type', '=', 'subcontractor')], limit=1)
                     line.job_cost_sheets_id.subcontractor_line_ids = [(0, 0, {
@@ -336,23 +332,22 @@ class AccountMove(models.Model):
                         'partner_id': rec.partner_id.id,
                     })]
         return res
-    
 
     # @api.depends('deduction_ids', 'addition_ids', 'amount_total', 'retation_amount_value', 'down_payment_fixed',
     #              'performance_amount', 'talyat', 'deductions')
-    @api.depends('invoice_line_ids', 'deduction_ids', 'addition_ids', 'amount_total', 'retation_amount_value', 'down_payment_fixed',
+    @api.depends('invoice_line_ids', 'deduction_ids', 'addition_ids', 'amount_total', 'retation_amount_value',
+                 'down_payment_fixed',
                  'performance_amount', 'talyat', 'deductions')
     def get_totals(self):
         for line in self:
             line.total_additions = 0.0
             line.total_deductions = 0.0
-            for line_invoice in line.invoice_line_ids.filtered(lambda x : x.name=='Addition'):
+            for line_invoice in line.invoice_line_ids.filtered(lambda x: x.name == 'Addition'):
                 line.total_additions += line_invoice.price_subtotal
 
-            for line_invoice in line.invoice_line_ids.filtered(lambda x : x.name=='Deduction'):
+            for line_invoice in line.invoice_line_ids.filtered(lambda x: x.name == 'Deduction'):
                 line.total_deductions += line_invoice.price_subtotal
             line.total_with_deduct_addition = line.amount_total
-
 
     def get_additions_and_deductions_values(self):
         if not self.deduction_ids:
@@ -564,7 +559,6 @@ class AccountMove(models.Model):
     def update_deduction_lines(self):
         lines = []
         total_deduction, total_addition, total_performance, total_retation, total_talyat, total_stectaat = 0, 0, 0, 0, 0, 0
-
         if not self.invoice_final:
             # Deductions
             # if self.deduction_ids and self.contract_type == 'subcontractor':
@@ -603,17 +597,30 @@ class AccountMove(models.Model):
                         tax_ids = invoice_lines.tax_ids.ids
                     else:
                         tax_ids = False
-                    lines.append((0, 0, {
-                        'account_id': record.account_id.id,
-                        'name': record.name,
-                        'price_unit': price,
-                        'price_unit2': price,
-                        'current_qty2': 1,
-                        'exclude_from_invoice_tab': False,
-                        'is_deduction': False,
-                        'tax_ids':[(6, 0, tax_ids if tax_ids else [])]
-                    }))
-            
+                    rec_line = self.invoice_line_ids.filtered(lambda l: l.name == record.name)
+                    if rec_line:
+                        rec_line.update({
+                            'account_id': record.account_id.id,
+                            'name': record.name,
+                            'price_unit': price,
+                            'price_unit2': price,
+                            'current_qty2': 1,
+                            'exclude_from_invoice_tab': False,
+                            'is_deduction': False,
+                            'tax_ids': [(6, 0, tax_ids if tax_ids else [])]
+                        })
+                    else:
+                        lines.append((0, 0, {
+                            'account_id': record.account_id.id,
+                            'name': record.name,
+                            'price_unit': price,
+                            'price_unit2': price,
+                            'current_qty2': 1,
+                            'exclude_from_invoice_tab': False,
+                            'is_deduction': False,
+                            'tax_ids': [(6, 0, tax_ids if tax_ids else [])]
+                        }))
+
             # Dedudctions
 
             deduction_lines = []
@@ -637,16 +644,29 @@ class AccountMove(models.Model):
                         tax_ids = invoice_lines.tax_ids.ids
                     else:
                         tax_ids = False
-                    lines.append((0, 0, {
-                        'account_id': record.account_id.id,
-                        'name': record.name,
-                        'price_unit': price,
-                        'price_unit2': price,
-                        'current_qty2': 1,
-                        'exclude_from_invoice_tab': False,
-                        'is_deduction': True,
-                        'tax_ids':[(6, 0, tax_ids if tax_ids else [])]
-                    }))
+                    rec_line = self.invoice_line_ids.filtered(lambda l: l.name == record.name)
+                    if rec_line:
+                        rec_line.update({
+                            'account_id': record.account_id.id,
+                            'name': record.name,
+                            'price_unit': price,
+                            'price_unit2': price,
+                            'current_qty2': 1,
+                            'exclude_from_invoice_tab': False,
+                            'is_deduction': True,
+                            'tax_ids': [(6, 0, tax_ids if tax_ids else [])]
+                        })
+                    else:
+                        lines.append((0, 0, {
+                            'account_id': record.account_id.id,
+                            'name': record.name,
+                            'price_unit': price,
+                            'price_unit2': price,
+                            'current_qty2': 1,
+                            'exclude_from_invoice_tab': False,
+                            'is_deduction': True,
+                            'tax_ids': [(6, 0, tax_ids if tax_ids else [])]
+                        }))
 
             if from_contrat_addition or from_contrat_deduction:
                 self.get_additions_and_deductions_values()
@@ -655,21 +675,33 @@ class AccountMove(models.Model):
             if self.contract_id.down_payment_account_id:
                 down_payment = self.amount_untaxed * self.down_payment_percentage / 100
                 self.total_down_payment = down_payment * -1
-                lines.append((0, 0, {
-                    'account_id': self.contract_id.down_payment_account_id.counterpart_account_id.id,
-                    'name': "دفعة  مقدمة",
-                    'price_unit': down_payment * -1,
-                    'price_unit2': down_payment * -1,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                    'is_deduction': True
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "دفعة  مقدمة")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.contract_id.down_payment_account_id.counterpart_account_id.id,
+                        'name': "دفعة  مقدمة",
+                        'price_unit': down_payment * -1,
+                        'price_unit2': down_payment * -1,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.contract_id.down_payment_account_id.counterpart_account_id.id,
+                        'name': "دفعة  مقدمة",
+                        'price_unit': down_payment * -1,
+                        'price_unit2': down_payment * -1,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True
+                    }))
 
             if self.final_invoice:
                 invoices = self.env['account.move'].search([('partner_id', '=', self.partner_id.id),
-                                                        ('contract_project_id', '=', self.contract_project_id.id),
-                                                        ('contract_id', '=', self.contract_id.id),
-                                                        ('id', '!=', self.id), ('state', '=', 'posted')])
+                                                            ('contract_project_id', '=', self.contract_project_id.id),
+                                                            ('contract_id', '=', self.contract_id.id),
+                                                            ('id', '!=', self.id), ('state', '=', 'posted')])
                 down_payment_value = 0
                 if invoices:
                     down_payment = 0
@@ -683,76 +715,138 @@ class AccountMove(models.Model):
                     if down_payment:
                         down_payment_fixed_contract = self.contract_id.down_payment_fixed
                         if down_payment_fixed_contract:
-                            down_payment_value = (down_payment_fixed_contract + down_payment - down_payment_current) * -1
+                            down_payment_value = (
+                                                         down_payment_fixed_contract + down_payment - down_payment_current) * -1
                         else:
                             down_payment_value = down_payment - down_payment_current
                     else:
-                        down_payment_value = (self.contract_id.down_payment_fixed - down_payment_current ) * -1
+                        down_payment_value = (self.contract_id.down_payment_fixed - down_payment_current) * -1
                     self.total_down_payment = down_payment_value - down_payment_current
-                    lines.append((0, 0, {
-                        'account_id': self.contract_id.down_payment_account_id.counterpart_account_id.id,
-                        'name': "دفعة مقدمة",
-                        'price_unit': down_payment_value,
-                        'price_unit2': down_payment_value,
-                        'current_qty2': 1,
-                        'exclude_from_invoice_tab': False,
-                        'is_deduction': True,
-                        'is_final_downpaymet_line': True,
-                    }))
+                    rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "دفعة  مقدمة")
+                    if rec_line:
+                        rec_line.update({
+                            'account_id': self.contract_id.down_payment_account_id.counterpart_account_id.id,
+                            'name': "دفعة مقدمة",
+                            'price_unit': down_payment_value,
+                            'price_unit2': down_payment_value,
+                            'current_qty2': 1,
+                            'exclude_from_invoice_tab': False,
+                            'is_deduction': True,
+                            'is_final_downpaymet_line': True,
+                        })
+                    else:
+                        lines.append((0, 0, {
+                            'account_id': self.contract_id.down_payment_account_id.counterpart_account_id.id,
+                            'name': "دفعة مقدمة",
+                            'price_unit': down_payment_value,
+                            'price_unit2': down_payment_value,
+                            'current_qty2': 1,
+                            'exclude_from_invoice_tab': False,
+                            'is_deduction': True,
+                            'is_final_downpaymet_line': True,
+                        }))
 
             # Performance
             if self.contract_id.performance_account_id:
                 performance = self.amount_untaxed * self.performance / 100
                 self.total_performance = performance * -1
-                lines.append((0, 0, {
-                    'account_id': self.contract_id.performance_account_id.counterpart_account_id.id,
-                    'name': "ضمان  اداء اعمال",
-                    'price_unit': -performance,
-                    'price_unit2': -performance,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                    'is_deduction': True
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "ضمان  اداء اعمال")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.contract_id.performance_account_id.counterpart_account_id.id,
+                        'name': "ضمان  اداء اعمال",
+                        'price_unit': -performance,
+                        'price_unit2': -performance,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.contract_id.performance_account_id.counterpart_account_id.id,
+                        'name': "ضمان  اداء اعمال",
+                        'price_unit': -performance,
+                        'price_unit2': -performance,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True
+                    }))
 
             # Retention
             if self.contract_id.retention_account_id:
                 retention = self.amount_untaxed * self.retation_amount / 100
                 self.total_retention = retention * -1
-                lines.append((0, 0, {
-                    'account_id': self.contract_id.retention_account_id.counterpart_account_id.id,
-                    'name': "محتجزات",
-                    'price_unit': -retention,
-                    'price_unit2': -retention,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                    'is_deduction': True
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "محتجزات")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.contract_id.retention_account_id.counterpart_account_id.id,
+                        'name': "محتجزات",
+                        'price_unit': -retention,
+                        'price_unit2': -retention,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.contract_id.retention_account_id.counterpart_account_id.id,
+                        'name': "محتجزات",
+                        'price_unit': -retention,
+                        'price_unit2': -retention,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True
+                    }))
 
             # تـعـليـات
             if self.talyat and self.contract_type == 'contractor' or 'subcontractor':
                 self.talyat_id = self.env['talyat.talyat'].search([], limit=1)
-                lines.append((0, 0, {
-                    'account_id': self.talyat_id.account_id.id,
-                    'name': "تـعـلـيـات اضافية",
-                    'price_unit': -self.talyat if not self.invoice_final else self.talyat,
-                    'price_unit2': -self.talyat if not self.invoice_final else self.talyat,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                    'is_deduction': True if not self.invoice_final else False
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "تـعـلـيـات اضافية")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.talyat_id.account_id.id,
+                        'name': "تـعـلـيـات اضافية",
+                        'price_unit': -self.talyat if not self.invoice_final else self.talyat,
+                        'price_unit2': -self.talyat if not self.invoice_final else self.talyat,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True if not self.invoice_final else False
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.talyat_id.account_id.id,
+                        'name': "تـعـلـيـات اضافية",
+                        'price_unit': -self.talyat if not self.invoice_final else self.talyat,
+                        'price_unit2': -self.talyat if not self.invoice_final else self.talyat,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True if not self.invoice_final else False
+                    }))
 
             # اسـتـقـطـاعات
             if self.deductions and self.contract_type == 'subcontractor' or 'contractor':
                 self.deductions_id = self.env['deduct.deduct'].search([], limit=1)
-                lines.append((0, 0, {
-                    'account_id': self.deductions_id.account_id.id,
-                    'name': "أسـتـقـطاعـات اضافية",
-                    'price_unit': -self.deductions if not self.invoice_final else self.deductions,
-                    'price_unit2': -self.deductions if not self.invoice_final else self.deductions,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                    'is_deduction': True if not self.invoice_final else False
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "أسـتـقـطاعـات اضافية")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.deductions_id.account_id.id,
+                        'name': "أسـتـقـطاعـات اضافية",
+                        'price_unit': -self.deductions if not self.invoice_final else self.deductions,
+                        'price_unit2': -self.deductions if not self.invoice_final else self.deductions,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True if not self.invoice_final else False
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.deductions_id.account_id.id,
+                        'name': "أسـتـقـطاعـات اضافية",
+                        'price_unit': -self.deductions if not self.invoice_final else self.deductions,
+                        'price_unit2': -self.deductions if not self.invoice_final else self.deductions,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True if not self.invoice_final else False
+                    }))
 
         else:
             invoices = self.env['account.move'].search([('partner_id', '=', self.partner_id.id),
@@ -770,72 +864,140 @@ class AccountMove(models.Model):
             if total_deduction and self.contract_type == 'subcontractor':
                 deduction_account = self.env['deduction.accounts'].search([('deduction_type', '=', 'deduction')],
                                                                           limit=1)
-                lines.append((0, 0, {
-                    'account_id': deduction_account.counterpart_account_id.id,
-                    'name': "Deduction",
-                    'price_unit': total_deduction,
-                    'price_unit2': total_deduction,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "Deduction")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': deduction_account.counterpart_account_id.id,
+                        'name': "Deduction",
+                        'price_unit': total_deduction,
+                        'price_unit2': total_deduction,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': deduction_account.counterpart_account_id.id,
+                        'name': "Deduction",
+                        'price_unit': total_deduction,
+                        'price_unit2': total_deduction,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                    }))
 
             if total_addition and self.contract_type == 'contractor':
                 addition_account = self.env['deduction.accounts'].search([('deduction_type', '=', 'addition')],
                                                                          limit=1)
-                lines.append((0, 0, {
-                    'account_id': addition_account.counterpart_account_id.id,
-                    'name': "Addition",
-                    'price_unit': total_addition,
-                    'price_unit2': total_addition,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "Addition")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': addition_account.counterpart_account_id.id,
+                        'name': "Addition",
+                        'price_unit': total_addition,
+                        'price_unit2': total_addition,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': addition_account.counterpart_account_id.id,
+                        'name': "Addition",
+                        'price_unit': total_addition,
+                        'price_unit2': total_addition,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                    }))
 
             if total_performance:
-                lines.append((0, 0, {
-                    'account_id': self.contract_id.performance_account_id.counterpart_account_id.id,
-                    'name': "Performance Bond",
-                    'price_unit': total_performance,
-                    'price_unit2': total_performance,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "Performance Bond")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.contract_id.performance_account_id.counterpart_account_id.id,
+                        'name': "Performance Bond",
+                        'price_unit': total_performance,
+                        'price_unit2': total_performance,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.contract_id.performance_account_id.counterpart_account_id.id,
+                        'name': "Performance Bond",
+                        'price_unit': total_performance,
+                        'price_unit2': total_performance,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                    }))
 
             if total_retation:
-                lines.append((0, 0, {
-                    'account_id': self.contract_id.retention_account_id.counterpart_account_id.id,
-                    'name': "Retention",
-                    'price_unit': total_retation,
-                    'price_unit2': total_retation,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "Retention")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.contract_id.retention_account_id.counterpart_account_id.id,
+                        'name': "Retention",
+                        'price_unit': total_retation,
+                        'price_unit2': total_retation,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.contract_id.retention_account_id.counterpart_account_id.id,
+                        'name': "Retention",
+                        'price_unit': total_retation,
+                        'price_unit2': total_retation,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                    }))
 
             # تـعـليـات
             if total_talyat and self.contract_type == 'contractor':
                 self.talyat_id = self.env['talyat.talyat'].search([], limit=1)
-                lines.append((0, 0, {
-                    'account_id': self.talyat_id.account_id.id,
-                    'name': "تـعـلـيـات",
-                    'price_unit': total_talyat,
-                    'price_unit2': total_talyat,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                    'is_deduction': True if not self.invoice_final else False
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "تـعـلـيـات")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.talyat_id.account_id.id,
+                        'name': "تـعـلـيـات",
+                        'price_unit': total_talyat,
+                        'price_unit2': total_talyat,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True if not self.invoice_final else False
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.talyat_id.account_id.id,
+                        'name': "تـعـلـيـات",
+                        'price_unit': total_talyat,
+                        'price_unit2': total_talyat,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True if not self.invoice_final else False
+                    }))
 
             # اسـتـقـطـاعات
             if total_stectaat and self.contract_type == 'subcontractor':
                 self.deductions_id = self.env['deduct.deduct'].search([], limit=1)
-                lines.append((0, 0, {
-                    'account_id': self.deductions_id.account_id.id,
-                    'name': "أسـتـقـطاعـات",
-                    'price_unit': total_stectaat,
-                    'price_unit2': total_stectaat,
-                    'current_qty2': 1,
-                    'exclude_from_invoice_tab': False,
-                    'is_deduction': True if not self.invoice_final else False
-                }))
+                rec_line = self.invoice_line_ids.filtered(lambda l: l.name == "أسـتـقـطاعـات")
+                if rec_line:
+                    rec_line.update({
+                        'account_id': self.deductions_id.account_id.id,
+                        'name': "أسـتـقـطاعـات",
+                        'price_unit': total_stectaat,
+                        'price_unit2': total_stectaat,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True if not self.invoice_final else False
+                    })
+                else:
+                    lines.append((0, 0, {
+                        'account_id': self.deductions_id.account_id.id,
+                        'name': "أسـتـقـطاعـات",
+                        'price_unit': total_stectaat,
+                        'price_unit2': total_stectaat,
+                        'current_qty2': 1,
+                        'exclude_from_invoice_tab': False,
+                        'is_deduction': True if not self.invoice_final else False
+                    }))
         self.invoice_line_ids = lines
         self.lines_updated = True
 
@@ -896,6 +1058,7 @@ class AccountMove(models.Model):
                 line.calculate_previous_qty()
                 line.onchange_completed_percentage_view()
             self._onchange_invoice_line_ids()
+
     @api.depends('partner_id', 'is_contract_invoice', 'contract_id')
     def get_contract_products(self):
         self.contract_products_ids = False
@@ -989,7 +1152,7 @@ class AccountMoveLine(models.Model):
     contract_line_id = fields.Many2one(comodel_name="owner.contract.line", string="", required=False, )
 
     price_unit2 = fields.Float(string='Price', digits='Payment Decimal')
-    price_after_tax = fields.Float(string='Price after tax', digits='Payment Decimal',compute="get_price_after_tax")
+    price_after_tax = fields.Float(string='Price after tax', digits='Payment Decimal', compute="get_price_after_tax")
 
     project_contract_id = fields.Many2one(comodel_name="project.project", string="Project",
                                           compute='get_contract_project', store=True, required=False, )
@@ -1014,7 +1177,7 @@ class AccountMoveLine(models.Model):
 
     def get_price_after_tax(self):
         for rec in self:
-            rec.price_after_tax=rec.price_subtotal
+            rec.price_after_tax = rec.price_subtotal
 
     # @api.onchange('actual_quant')
     # def _onchane_actual_quant(self):
@@ -1024,7 +1187,6 @@ class AccountMoveLine(models.Model):
     #                 raise ValidationError(
     #                     _('Actual Qty Must Not Bigger Than Total Qty'))
 
-
     @api.depends('product_id', 'quantity', 'move_id', 'move_id.invoice_line_ids')
     def get_contract_project(self):
         for rec in self:
@@ -1033,14 +1195,13 @@ class AccountMoveLine(models.Model):
             else:
                 rec.project_contract_id = False
 
-    
     @api.onchange('completed_percentage_view', 'current_qty2', 'price_unit2')
     def onchange_completed_percentage_view(self):
         for line in self:
             if line.completed_percentage_view:
                 line.price_unit = line.price_unit2
                 line.price_unit2 = line.price_unit2
-                line.total_amount = line.price_unit2 * line.current_qty2 *(line.completed_percentage_view / 100)
+                line.total_amount = line.price_unit2 * line.current_qty2 * (line.completed_percentage_view / 100)
                 line.price_subtotal = line.total_amount
             else:
                 line.price_unit2 = line.price_unit2
@@ -1048,14 +1209,14 @@ class AccountMoveLine(models.Model):
                 line.total_amount = line.current_qty2 * line.price_unit2
                 line.price_subtotal = line.total_amount
 
-
     # @api.onchange('product_id')
     # def product_id_onchange_test(self):
     #     for item in self:
     #         if item.product_id:
     #             item.price_unit2 = item.product_id.lst_price
 
-    @api.onchange('quantity', 'discount', 'price_unit', 'tax_ids', 'price_unit2', 'completed_percentage_view', 'current_qty2')
+    @api.onchange('quantity', 'discount', 'price_unit', 'tax_ids', 'price_unit2', 'completed_percentage_view',
+                  'current_qty2')
     def _onchange_price_subtotal(self):
         for line in self:
             if not line.move_id.is_invoice(include_receipts=True):
@@ -1069,7 +1230,8 @@ class AccountMoveLine(models.Model):
         # raise Warning('create',vals_list)
         ACCOUNTING_FIELDS = ('debit', 'credit', 'amount_currency')
         BUSINESS_FIELDS = (
-            'price_unit', 'price_unit', 'quantity', 'discount', 'tax_ids', 'completed_percentage_view', 'price_unit2', 'current_qty2')
+            'price_unit', 'price_unit', 'quantity', 'discount', 'tax_ids', 'completed_percentage_view', 'price_unit2',
+            'current_qty2')
 
         for vals in vals_list:
             move = self.env['account.move'].browse(vals['move_id'])
@@ -1200,7 +1362,6 @@ class AccountMoveLine(models.Model):
             taxes=taxes or self.tax_ids,
             price_subtotal=price_subtotal or self.price_subtotal,
             force_computation=force_computation
-            
 
         )
 
@@ -1234,7 +1395,7 @@ class AccountMoveLine(models.Model):
             vals = {
                 'quantity': quantity or 1.0,
                 'price_unit': amount_currency / discount_factor / (quantity or 1.0),
-                'price_unit2' :self.price_unit2,
+                'price_unit2': self.price_unit2,
                 'current_qty2': self.current_qty2,
                 'previous_qty': self.previous_qty,
                 'actual_quant': self.actual_quant,
@@ -1247,7 +1408,7 @@ class AccountMoveLine(models.Model):
                 'quantity': quantity or 1.0,
                 'discount': 0.0,
                 'price_unit': amount_currency / (quantity or 1.0),
-                'price_unit2' : self.price_unit2,
+                'price_unit2': self.price_unit2,
                 'current_qty2': self.current_qty2,
                 'previous_qty': self.previous_qty,
                 'actual_quant': self.previous_qty,
@@ -1264,7 +1425,7 @@ class AccountMoveLine(models.Model):
 
     def _get_price_total_and_subtotal(self, price_unit=None, quantity=None, discount=None, currency=None, product=None,
                                       partner=None, taxes=None, move_type=None, completed_percentage_view=None,
-                                      price_unit2=None,current_qty2=None):
+                                      price_unit2=None, current_qty2=None):
         self.ensure_one()
         return self._get_price_total_and_subtotal_model(
             price_unit=price_unit or self.price_unit,
@@ -1282,18 +1443,17 @@ class AccountMoveLine(models.Model):
 
     @api.model
     def _get_price_total_and_subtotal_model(self, price_unit, quantity, discount, currency, product, partner, taxes,
-                                            move_type, completed_percentage_view, price_unit2,current_qty2):
+                                            move_type, completed_percentage_view, price_unit2, current_qty2):
         res = {}
 
-
         # Compute 'price_subtotal'.
-        
+
         price_unit_wo_discount = price_unit2 * (1 - (discount / 100.0))
         if completed_percentage_view != 0:
-            price_unit_wo_discount = price_unit_wo_discount * (completed_percentage_view/100)
+            price_unit_wo_discount = price_unit_wo_discount * (completed_percentage_view / 100)
         else:
             price_unit_wo_discount = price_unit_wo_discount
-        
+
         subtotal = current_qty2 * price_unit_wo_discount
 
         # Compute 'price_total'.
@@ -1392,15 +1552,15 @@ class InvoiceDeduction(models.Model):
     @api.depends('deduction_accounts_id', 'move_id.amount_total', 'percentage_value', 'move_id.total_deductions')
     def get_value(self):
         for rec in self:
-            print('1111111',rec.value)
+            print('1111111', rec.value)
             rec.value = 0.0
             if rec.percentage_value:
                 if self.move_id.total_deductions:
                     if rec.is_percentage:
                         percentage_total = 0
                         for deduction in self.move_id.deduction_ids:
-                            percentage_total+= deduction.percentage_value
-                        rec.value = (self.move_id.total_deductions/percentage_total) * rec.percentage_value * (-1)
+                            percentage_total += deduction.percentage_value
+                        rec.value = (self.move_id.total_deductions / percentage_total) * rec.percentage_value * (-1)
                     else:
                         rec.value = rec.percentage_value
                     # rec.value = self.move_id.total_deductions
@@ -1409,7 +1569,6 @@ class InvoiceDeduction(models.Model):
                 else:
                     rec.value = rec.percentage_value
                 print('2222222', rec.value)
-
 
 
 class InvoiceAddition(models.Model):
@@ -1441,8 +1600,8 @@ class InvoiceAddition(models.Model):
                     if rec.is_percentage:
                         percentage_total = 0
                         for addition in self.move_id.addition_ids:
-                            percentage_total+= addition.percentage_value
-                        rec.value = (self.move_id.total_additions/percentage_total) * rec.percentage_value
+                            percentage_total += addition.percentage_value
+                        rec.value = (self.move_id.total_additions / percentage_total) * rec.percentage_value
                     else:
                         rec.value = rec.percentage_value
                     # rec.value = self.move_id.total_additions
@@ -1455,12 +1614,12 @@ class InvoiceAddition(models.Model):
 class AccountAnalyticLine(models.Model):
     _inherit = 'account.analytic.line'
 
-
     @api.model_create_multi
     def create(self, vals_list):
         for vals in vals_list:
             if vals.get('account_id'):
-                project_id = self.env['project.project'].search([('analytic_account_id', '=', vals.get('account_id'))], limit=1)
+                project_id = self.env['project.project'].search([('analytic_account_id', '=', vals.get('account_id'))],
+                                                                limit=1)
                 vals['project_id'] = project_id and project_id.id
 
         result = super(AccountAnalyticLine, self).create(vals_list)
