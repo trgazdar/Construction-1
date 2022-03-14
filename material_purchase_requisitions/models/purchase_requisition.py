@@ -181,25 +181,25 @@ class MaterialPurchaseRequisition(models.Model):
     )
 
     @api.model
-    def create(self, vals):
-        X = 0
-        if vals['type_pr'] == 'C':
-            X = self.env['ir.sequence'].next_by_code('purchase.requisition.seq.c')
-        elif vals['type_pr'] == 'E':
-            X = self.env['ir.sequence'].next_by_code('purchase.requisition.seq.e')
-        elif vals['type_pr'] == 'M':
-            X = self.env['ir.sequence'].next_by_code('purchase.requisition.seq.m')
-
-        # name = self.env['ir.sequence'].next_by_code('purchase.requisition.seq')
-
-        project_no = self.env['project.project'].search([('id', '=', vals['project_id'])])
-
-        vals.update({
-            'name': 'PR' + str(datetime.now().year) + '-' + str(project_no['project_no']) + '-' + str(
-                vals['type_pr']) + '-' + str(X)
-        })
-        res = super(MaterialPurchaseRequisition, self).create(vals)
-        return res
+    # def create(self, vals):
+    #     X = 0
+    #     if vals['type_pr'] == 'C':
+    #         X = self.env['ir.sequence'].next_by_code('purchase.requisition.seq.c')
+    #     elif vals['type_pr'] == 'E':
+    #         X = self.env['ir.sequence'].next_by_code('purchase.requisition.seq.e')
+    #     elif vals['type_pr'] == 'M':
+    #         X = self.env['ir.sequence'].next_by_code('purchase.requisition.seq.m')
+    #
+    #     # name = self.env['ir.sequence'].next_by_code('purchase.requisition.seq')
+    #
+    #     project_no = self.env['project.project'].search([('id', '=', vals['project_id'])])
+    #
+    #     vals.update({
+    #         'name': 'PR' + str(datetime.now().year) + '-' + str(project_no['project_no']) + '-' + str(
+    #             vals['type_pr']) + '-' + str(X)
+    #     })
+    #     res = super(MaterialPurchaseRequisition, self).create(vals)
+    #     return res
 
     def requisition_confirm(self):
         for rec in self:
