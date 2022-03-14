@@ -16,35 +16,35 @@ class PurchaseOrder(models.Model):
     project_period = fields.Char(sting='Project Period')
     job_order_id = fields.Many2one(comodel_name="project.task", string="Task / Job Order", required=False, )
 
-    @api.model
-    def create(self, vals):
-        res = super(PurchaseOrder, self).create(vals)
-        if res.type_po == 'C':
-            X = self.env['ir.sequence'].next_by_code('purchase.order.seq.c')
-            res.name = 'PO' + str(datetime.now().year) + '-' + str(res.project_no) + '-' + str(res.type_po) + '-' + str(
-                X)
-
-        elif res.type_po == 'E':
-            X = self.env['ir.sequence'].next_by_code('purchase.order.seq.e')
-            res.name = 'PO' + str(datetime.now().year) + '-' + str(res.project_no) + '-' + str(res.type_po) + '-' + str(
-                X)
-
-        elif res.type_po == 'M':
-            X = self.env['ir.sequence'].next_by_code('purchase.order.seq.m')
-            res.name = 'PO' + str(datetime.now().year) + '-' + str(res.project_no) + '-' + str(res.type_po) + '-' + str(
-                X)
-
-        else:
-            res.name = self.env['ir.sequence'].next_by_code('purchase.order.seq')
-
-        if res.order_line:
-            for line in res.order_line:
-                if line.product_id.type == 'service':
-                    if line.recently_done_update:
-                        line.write(
-                            {'qty_received': line.qty_received + line.recently_done_qty,
-                             'recently_done_update': False})
-        return res
+    # @api.model
+    # def create(self, vals):
+    #     res = super(PurchaseOrder, self).create(vals)
+    #     if res.type_po == 'C':
+    #         X = self.env['ir.sequence'].next_by_code('purchase.order.seq.c')
+    #         res.name = 'PO' + str(datetime.now().year) + '-' + str(res.project_no) + '-' + str(res.type_po) + '-' + str(
+    #             X)
+    #
+    #     elif res.type_po == 'E':
+    #         X = self.env['ir.sequence'].next_by_code('purchase.order.seq.e')
+    #         res.name = 'PO' + str(datetime.now().year) + '-' + str(res.project_no) + '-' + str(res.type_po) + '-' + str(
+    #             X)
+    #
+    #     elif res.type_po == 'M':
+    #         X = self.env['ir.sequence'].next_by_code('purchase.order.seq.m')
+    #         res.name = 'PO' + str(datetime.now().year) + '-' + str(res.project_no) + '-' + str(res.type_po) + '-' + str(
+    #             X)
+    #
+    #     else:
+    #         res.name = self.env['ir.sequence'].next_by_code('purchase.order.seq')
+    #
+    #     if res.order_line:
+    #         for line in res.order_line:
+    #             if line.product_id.type == 'service':
+    #                 if line.recently_done_update:
+    #                     line.write(
+    #                         {'qty_received': line.qty_received + line.recently_done_qty,
+    #                          'recently_done_update': False})
+    #     return res
 
     def write(self, vals):
         res = super(PurchaseOrder, self).write(vals)
