@@ -17,20 +17,20 @@ class PurchaseOrder(models.Model):
     def check_order_lines_control_cost(self):
         for rec in self:
             rec.is_need_confirm = False
-            if not self.validate_done:
-                for line in rec.order_line:
-                    if line.product_qty > line.validate_qty:  # or rec.price_unit > rec.validate_price:
-                        if self.env.user.has_group('procurment_list_project.group_control_po_validate'):
-                            rec.is_need_confirm = True
-                        elif self.env.user.has_group(
-                                'procurment_list_project.group_control_po_validate_type_c') and rec.origin == "Procurement-C":
-                            rec.is_need_confirm = True
-                        elif self.env.user.has_group(
-                                'procurment_list_project.group_control_po_validate_type_m') and rec.origin == "Procurement-M":
-                            rec.is_need_confirm = True
-                        elif self.env.user.has_group(
-                                'procurment_list_project.group_control_po_validate_type_e') and rec.origin == "Procurement-E":
-                            rec.is_need_confirm = True
+            # if not self.validate_done:
+            #     for line in rec.order_line:
+            #         if line.product_qty > line.validate_qty:  # or rec.price_unit > rec.validate_price:
+            #             if self.env.user.has_group('procurment_list_project.group_control_po_validate'):
+            #                 rec.is_need_confirm = True
+            #             elif self.env.user.has_group(
+            #                     'procurment_list_project.group_control_po_validate_type_c') and rec.origin == "Procurement-C":
+            #                 rec.is_need_confirm = True
+            #             elif self.env.user.has_group(
+            #                     'procurment_list_project.group_control_po_validate_type_m') and rec.origin == "Procurement-M":
+            #                 rec.is_need_confirm = True
+            #             elif self.env.user.has_group(
+            #                     'procurment_list_project.group_control_po_validate_type_e') and rec.origin == "Procurement-E":
+            #                 rec.is_need_confirm = True
 
     def gm_approve(self):
         self.state = 'gm_approved'
