@@ -38,21 +38,21 @@ class PurchaseOrder(models.Model):
     def action_dep_approve(self):
         self.state = 'dep_approved'
 
-    def button_confirm(self):
-        for order in self:
-            if self.is_need_confirm:
-                raise UserError('Order Lines Need Validate From Control Cost Responsible')
-            if order.state not in ['draft', 'sent', 'gm_approved']:
-                continue
-            order._add_supplier_to_product()
-            # Deal with double validation process
-            if order.company_id.po_double_validation == 'one_step' \
-                    or (order.company_id.po_double_validation == 'two_step' \
-                        and order.amount_total < self.env.company.currency_id._convert(
-                        order.company_id.po_double_validation_amount, order.currency_id, order.company_id,
-                        order.date_order or fields.Date.today())) \
-                    or order.user_has_groups('purchase.group_purchase_manager'):
-                order.button_approve()
-            else:
-                order.write({'state': 'to approve'})
-        return True
+    # def button_confirm(self):
+    #     for order in self:
+    #         if self.is_need_confirm:
+    #             raise UserError('Order Lines Need Validate From Control Cost Responsible')
+    #         if order.state not in ['draft', 'sent', 'gm_approved']:
+    #             continue
+    #         order._add_supplier_to_product()
+    #         # Deal with double validation process
+    #         if order.company_id.po_double_validation == 'one_step' \
+    #                 or (order.company_id.po_double_validation == 'two_step' \
+    #                     and order.amount_total < self.env.company.currency_id._convert(
+    #                     order.company_id.po_double_validation_amount, order.currency_id, order.company_id,
+    #                     order.date_order or fields.Date.today())) \
+    #                 or order.user_has_groups('purchase.group_purchase_manager'):
+    #             order.button_approve()
+    #         else:
+    #             order.write({'state': 'to approve'})
+    #     return True
